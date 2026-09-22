@@ -1,0 +1,18 @@
+{
+  "name": "@photos/phase-5",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Phase 5 setup gates. The testable MVP is the Phase 1 storefront on :3000 — not a second app.",
+  "scripts": {
+    "setup": "tsx src/cli.ts",
+    "dev": "npm run dev --prefix ../Phase-1",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  }
+}

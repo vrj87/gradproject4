@@ -1,0 +1,704 @@
+[
+  {
+    "id": "place-vibe-without-name",
+    "label": "PlaceVibeWithoutName",
+    "summary": "People remember a place by vibe or trip, not the town or date, and search cannot take that clue.",
+    "researchQuestionIds": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "retrievalFailureType": "understand",
+    "rememberedCue": "place_vibe",
+    "forgottenCue": "exact_place",
+    "photoKind": "memory",
+    "metricNode": "understand",
+    "segmentHints": [
+      "S2"
+    ],
+    "quotes": [
+      {
+        "text": "I remember that small cafe we went to on the Goa trip but I cannot find the photo. Search wants a date or the place name and I forgot both.",
+        "reviewId": "fix-s2-01",
+        "source": "reddit",
+        "url": "https://www.reddit.com/r/googlephotos/comments/goa-cafe"
+      },
+      {
+        "text": "ooking for that photo of the tiny beach cafe from our vacation. I remember the vibe not the location or when it was taken. Google Photos search is useless for this.",
+        "reviewId": "fix-s2-02",
+        "source": "play_store"
+      },
+      {
+        "text": "I can picture the little cafe during our holiday trip but search does not understand place vibe. I only remember it was somewhere we walked after the beach.",
+        "reviewId": "fix-s2-03",
+        "source": "app_store"
+      },
+      {
+        "text": "ictures from a trip. I remember a small cafe and yellow chairs, not the city name or the album.",
+        "reviewId": "fix-s2-04",
+        "source": "forum"
+      },
+      {
+        "text": "Comment: I still cannot find the cafe photo from our Goa trip. I remember the place vibe and forgot the date so search returns nothing useful.",
+        "reviewId": "fix-s2-05",
+        "source": "youtube"
+      },
+      {
+        "text": "food not the venue name. Search for the trip does not surface them.",
+        "reviewId": "fix-s2-06",
+        "source": "reddit"
+      }
+    ],
+    "estimatedFrequency": 0.25,
+    "impactOnRetrieval": "high",
+    "mvpFeasibility": "high",
+    "confidence": "high",
+    "actionableInsight": "Accept place-vibe language (small cafe on that trip) instead of demanding a place name or date first.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "object-episode-find",
+    "label": "ObjectEpisodeFind",
+    "summary": "People remember an object plus an episode (medicine when sick, receipt last winter) and have forgotten the date.",
+    "researchQuestionIds": [
+      1,
+      2,
+      7
+    ],
+    "retrievalFailureType": "understand",
+    "rememberedCue": "object",
+    "forgottenCue": "date",
+    "photoKind": "document",
+    "metricNode": "understand",
+    "segmentHints": [
+      "S3"
+    ],
+    "quotes": [
+      {
+        "text": "I took a picture of the medicine I took when I was sick last year and now I cannot find it. I remember the bottle not the date or album.",
+        "reviewId": "fix-s3-01",
+        "source": "play_store"
+      },
+      {
+        "text": "ear. I remember the shop and that I was sick, not the filename or when I screenshotted it.",
+        "reviewId": "fix-s3-02",
+        "source": "reddit",
+        "url": "https://www.reddit.com/r/googlephotos/comments/receipt"
+      },
+      {
+        "text": "Looking for that photo of the medicine box when I was sick. Search does not understand object plus episode. I forgot the exact date.",
+        "reviewId": "fix-s3-03",
+        "source": "app_store"
+      },
+      {
+        "text": "I scan documents into Photos. Finding a warranty or ID later is hard because I remember the object not the album name.",
+        "reviewId": "fix-s3-04",
+        "source": "forum"
+      },
+      {
+        "text": "Lost a screenshot of a train ticket. I remember the destination and that it was last winter, not the date I saved it.",
+        "reviewId": "fix-s3-05",
+        "source": "reddit"
+      },
+      {
+        "text": "ick last year and taking a photo of the medicine label.",
+        "reviewId": "fix-s3-06",
+        "source": "play_store"
+      }
+    ],
+    "estimatedFrequency": 0.111,
+    "impactOnRetrieval": "high",
+    "mvpFeasibility": "high",
+    "confidence": "high",
+    "actionableInsight": "Map object-plus-episode clues to a date window and object tags rather than requiring the capture day.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "forgotten-date-album",
+    "label": "ForgottenDateAlbum",
+    "summary": "Users know the photo exists but cannot formulate a query because they forgot date, album, and keywords.",
+    "researchQuestionIds": [
+      3,
+      4
+    ],
+    "retrievalFailureType": "formulate",
+    "rememberedCue": "event",
+    "forgottenCue": "date",
+    "photoKind": "memory",
+    "metricNode": "formulate",
+    "segmentHints": [
+      "S1",
+      "S2"
+    ],
+    "quotes": [
+      {
+        "text": "yellow chairs, not the city name or the album.",
+        "reviewId": "fix-s2-04",
+        "source": "forum"
+      },
+      {
+        "text": "Goa trip. I remember the place vibe and forgot the date so search returns nothing useful.",
+        "reviewId": "fix-s2-05",
+        "source": "youtube"
+      },
+      {
+        "text": ". I remember the bottle not the date or album.",
+        "reviewId": "fix-s3-01",
+        "source": "play_store"
+      },
+      {
+        "text": "r the shop and that I was sick, not the filename or when I screenshotted it.",
+        "reviewId": "fix-s3-02",
+        "source": "reddit",
+        "url": "https://www.reddit.com/r/googlephotos/comments/receipt"
+      },
+      {
+        "text": "d because I remember the object not the album name.",
+        "reviewId": "fix-s3-04",
+        "source": "forum"
+      },
+      {
+        "text": "I know the old photo exists but I forgot the date and the album. Search keeps asking for words I do not remember.",
+        "reviewId": "fix-date-01",
+        "source": "app_store"
+      }
+    ],
+    "estimatedFrequency": 0.236,
+    "impactOnRetrieval": "high",
+    "mvpFeasibility": "high",
+    "confidence": "high",
+    "actionableInsight": "Let people start from what they still remember instead of a date, album, or filename field.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "unevaluable-results",
+    "label": "UnevaluableResults",
+    "summary": "A relevant photo may be in the grid, but near-misses make the set impossible to evaluate.",
+    "researchQuestionIds": [
+      8
+    ],
+    "retrievalFailureType": "recognize",
+    "rememberedCue": "place_vibe",
+    "forgottenCue": "keywords",
+    "photoKind": "memory",
+    "metricNode": "recognize",
+    "segmentHints": [
+      "S1",
+      "S2"
+    ],
+    "quotes": [
+      {
+        "text": "Search dumped hundreds of thumbnails. Maybe the photo was in there but I could not evaluate the result set. Too many similar beach pictures.",
+        "reviewId": "fix-rec-01",
+        "source": "play_store"
+      },
+      {
+        "text": "The results were overwhelming. I think the old photo was somewhere in the grid but I could not recognize it among near misses.",
+        "reviewId": "fix-rec-02",
+        "source": "reddit",
+        "url": "https://www.reddit.com/r/googlephotos/comments/grid"
+      },
+      {
+        "text": "Relevant results are hard to evaluate. I get a wall of similar vacation photos and I cannot tell which one is the cafe I remember.",
+        "reviewId": "fix-rec-03",
+        "source": "app_store"
+      },
+      {
+        "text": "ould not pick the picture I remembered. Near misses look the same.",
+        "reviewId": "fix-rec-04",
+        "source": "forum"
+      },
+      {
+        "text": "too many old pictures at once. I cannot evaluate which thumbnail is the one I actually remember.",
+        "reviewId": "fix-rec-05",
+        "source": "youtube"
+      }
+    ],
+    "estimatedFrequency": 0.069,
+    "impactOnRetrieval": "high",
+    "mvpFeasibility": "high",
+    "confidence": "high",
+    "actionableInsight": "Group candidates (trip, day, object) with a why-this-group chip so people can recognize the photo.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "refine-dead-end",
+    "label": "RefineDeadEnd",
+    "summary": "After a miss, users cannot teach the product what they meant; they type again or quit.",
+    "researchQuestionIds": [
+      9
+    ],
+    "retrievalFailureType": "refine",
+    "rememberedCue": "other",
+    "forgottenCue": "keywords",
+    "photoKind": "unknown",
+    "metricNode": "refine",
+    "segmentHints": [
+      "S1"
+    ],
+    "quotes": [
+      {
+        "text": "I struggle to refine an unsuccessful search. Photos does not ask what else I remember. I just try another keyword and fail again.",
+        "reviewId": "fix-ref-02",
+        "source": "play_store"
+      },
+      {
+        "text": "When search fails I have no way to say not that trip or more like this. Refining old photo search is a dead end.",
+        "reviewId": "fix-ref-03",
+        "source": "app_store"
+      },
+      {
+        "text": "There is no refine step. After I cannot find the old photo I just scroll the timeline or quit.",
+        "reviewId": "fix-ref-05",
+        "source": "reddit"
+      },
+      {
+        "text": "Comment: I cannot refine Google Photos search when the first query misses. It never asks a follow up about what I remember.",
+        "reviewId": "fix-ref-06",
+        "source": "youtube"
+      }
+    ],
+    "estimatedFrequency": 0.056,
+    "impactOnRetrieval": "high",
+    "mvpFeasibility": "high",
+    "confidence": "high",
+    "actionableInsight": "After a miss, elicit one more remembered cue or accept not-this-trip instead of another blank keyword box.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "screenshot-utility",
+    "label": "ScreenshotUtilityMix",
+    "summary": "Screenshots and documents fail differently from trip memories; search mixes the two jobs.",
+    "researchQuestionIds": [
+      1,
+      7
+    ],
+    "retrievalFailureType": "retrieve",
+    "rememberedCue": "screenshot",
+    "forgottenCue": "date",
+    "photoKind": "screenshot",
+    "metricNode": "retrieve",
+    "segmentHints": [
+      "S3"
+    ],
+    "quotes": [
+      {
+        "text": "Why is the backup of one screenshot now taking 5 minutes. And please give an opt out to stacking photos!",
+        "reviewId": "playstore-0ef4f97f-a18d-4218-8023-67af9e9facee",
+        "source": "play_store",
+        "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.photos&reviewId=0ef4f97f-a18d-4218-8023-67af9e9facee"
+      },
+      {
+        "text": "Need to find a screenshot of a receipt from last year. I remember the shop and that I was sick, not the filename or when I screenshotted it.",
+        "reviewId": "fix-s3-02",
+        "source": "reddit",
+        "url": "https://www.reddit.com/r/googlephotos/comments/receipt"
+      },
+      {
+        "text": "Lost a screenshot of a train ticket. I remember the destination and that it was last winter, not the date I saved it.",
+        "reviewId": "fix-s3-05",
+        "source": "reddit"
+      },
+      {
+        "text": "Screenshots and memories are mixed. I am looking for a screenshot of a QR code and search shows holiday photos instead.",
+        "reviewId": "fix-ss-01",
+        "source": "play_store"
+      },
+      {
+        "text": "Finding a screenshot is a different job from finding a trip memory. I remember the content of the screenshot not the date.",
+        "reviewId": "fix-ss-02",
+        "source": "reddit",
+        "url": "https://www.reddit.com/r/googlephotos/comments/screenshot"
+      },
+      {
+        "text": "I struggle to retrieve old screenshots. Search treats them like regular photos. I remember the document text not an album.",
+        "reviewId": "fix-ss-03",
+        "source": "app_store"
+      }
+    ],
+    "estimatedFrequency": 0.125,
+    "impactOnRetrieval": "medium",
+    "mvpFeasibility": "high",
+    "confidence": "high",
+    "actionableInsight": "Separate screenshot and document retrieval from memory search so content clues can match captions.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "people-without-name",
+    "label": "PeopleWithoutName",
+    "summary": "The face is remembered; the searchable name or tag is not.",
+    "researchQuestionIds": [
+      2,
+      7
+    ],
+    "retrievalFailureType": "understand",
+    "rememberedCue": "people",
+    "forgottenCue": "who",
+    "photoKind": "memory",
+    "metricNode": "understand",
+    "segmentHints": [
+      "S4"
+    ],
+    "quotes": [
+      {
+        "text": "e name. Search for the trip does not surface them.",
+        "reviewId": "fix-s2-06",
+        "source": "reddit"
+      },
+      {
+        "text": "hoto but I forgot their name in search. Face is in my head, the search token is not.",
+        "reviewId": "fix-ppl-01",
+        "source": "reddit"
+      },
+      {
+        "text": "or old pictures of a friend. I know the face. Photos search wants a name I do not remember tagging.",
+        "reviewId": "fix-ppl-02",
+        "source": "app_store"
+      },
+      {
+        "text": "t I cannot search by the feeling of the face.",
+        "reviewId": "fix-ppl-03",
+        "source": "play_store"
+      },
+      {
+        "text": "f my cousin from a trip. I remember her face and the event, not the exact name I used in search.",
+        "reviewId": "fix-ppl-05",
+        "source": "reddit"
+      },
+      {
+        "text": "Comment: unlabeled faces mean I cannot find old pictures of people I clearly remember.",
+        "reviewId": "fix-ppl-06",
+        "source": "youtube"
+      }
+    ],
+    "estimatedFrequency": 0.125,
+    "impactOnRetrieval": "medium",
+    "mvpFeasibility": "medium",
+    "confidence": "high",
+    "actionableInsight": "Accept people-in-the-photo descriptions when a name tag was never saved.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "timeline-scroll-workaround",
+    "label": "TimelineScrollWorkaround",
+    "summary": "When search fails, people scroll the timeline for hours instead of refining.",
+    "researchQuestionIds": [
+      6
+    ],
+    "retrievalFailureType": "refine",
+    "rememberedCue": "other",
+    "forgottenCue": "date",
+    "photoKind": "memory",
+    "metricNode": "refine",
+    "segmentHints": [
+      "S1"
+    ],
+    "quotes": [
+      {
+        "text": "e Photos search returned a huge grid. I scrolled and still could not pick the picture I remembered. Near misses look the same.",
+        "reviewId": "fix-rec-04",
+        "source": "forum"
+      },
+      {
+        "text": "fter I cannot find the old photo I just scroll the timeline or quit.",
+        "reviewId": "fix-ref-05",
+        "source": "reddit"
+      },
+      {
+        "text": "When search fails I just scroll the timeline for hours looking for that old photo. That is my only workaround.",
+        "reviewId": "fix-wr-01",
+        "source": "reddit"
+      },
+      {
+        "text": "I gave up on search and scrolled months of the timeline to find old pictures I remembered.",
+        "reviewId": "fix-wr-02",
+        "source": "play_store"
+      },
+      {
+        "text": "ound is always the same: forget search, scroll the timeline, hope I see the photo.",
+        "reviewId": "fix-wr-03",
+        "source": "app_store"
+      },
+      {
+        "text": "find the photo I open the timeline and scroll. Search is not how I retrieve old pictures anymore.",
+        "reviewId": "fix-wr-04",
+        "source": "forum"
+      }
+    ],
+    "estimatedFrequency": 0.167,
+    "impactOnRetrieval": "medium",
+    "mvpFeasibility": "high",
+    "confidence": "high",
+    "actionableInsight": "Treat timeline scroll as evidence the search path failed, not as a successful find method.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "ask-someone-else",
+    "label": "AskSomeoneElse",
+    "summary": "Family and shared libraries push people to ask a partner or the other phone.",
+    "researchQuestionIds": [
+      6,
+      10
+    ],
+    "retrievalFailureType": "retrieve",
+    "rememberedCue": "people",
+    "forgottenCue": "other",
+    "photoKind": "memory",
+    "metricNode": "retrieve",
+    "segmentHints": [
+      "S5"
+    ],
+    "quotes": [
+      {
+        "text": "I asked my partner to look on their phone. The old photo is in a shared library and I could not find it myself.",
+        "reviewId": "fix-ask-01",
+        "source": "reddit"
+      },
+      {
+        "text": "annot find photos of the kids I text my wife. The family archive is split across two Google Photos accounts.",
+        "reviewId": "fix-ask-02",
+        "source": "forum"
+      },
+      {
+        "text": "I had to ask a friend who was on the trip because I could not retrieve the old pictures from my own library.",
+        "reviewId": "fix-ask-03",
+        "source": "play_store"
+      },
+      {
+        "text": "Shared library makes find worse. I remember the photo and still have to ask someone else to search.",
+        "reviewId": "fix-ask-04",
+        "source": "app_store"
+      },
+      {
+        "text": "Photos of the kids live on my partner's phone. I remember the moment and still cannot find them in my Google Photos.",
+        "reviewId": "fix-ask-05",
+        "source": "reddit"
+      },
+      {
+        "text": "Comment: I ping my sister to send the old photo because search on my library failed.",
+        "reviewId": "fix-ask-06",
+        "source": "youtube"
+      }
+    ],
+    "estimatedFrequency": 0.083,
+    "impactOnRetrieval": "medium",
+    "mvpFeasibility": "medium",
+    "confidence": "high",
+    "actionableInsight": "Shared-library find is a different segment; do not treat asking another person as product success.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "heavy-library",
+    "label": "HeavyLibraryCannotScroll",
+    "summary": "Years and thousands of photos make scroll hopeless when memory is incomplete.",
+    "researchQuestionIds": [
+      10
+    ],
+    "retrievalFailureType": "retrieve",
+    "rememberedCue": "time_fuzzy",
+    "forgottenCue": "date",
+    "photoKind": "memory",
+    "metricNode": "retrieve",
+    "segmentHints": [
+      "S1"
+    ],
+    "quotes": [
+      {
+        "text": "Google Photos search returned a huge grid. I scrolled and still could not pick the picture I remembered. Near misses look the same.",
+        "reviewId": "fix-rec-04",
+        "source": "forum"
+      },
+      {
+        "text": "I have thousands of photos over years. I cannot scroll back. Finding an old photo I remember is impossible in a heavy library.",
+        "reviewId": "fix-s1-01",
+        "source": "play_store"
+      },
+      {
+        "text": "Years of photos. Thousands. I know the picture exists and I still cannot find it because the library is too big to scroll.",
+        "reviewId": "fix-s1-02",
+        "source": "reddit"
+      },
+      {
+        "text": "Heavy library users like me cannot use the timeline. I need another way to retrieve old pictures I only half remember.",
+        "reviewId": "fix-s1-03",
+        "source": "app_store"
+      },
+      {
+        "text": "After ten years of Google Photos I have thousands of old pictures. Search and scroll both fail when memory is incomplete.",
+        "reviewId": "fix-s1-04",
+        "source": "forum"
+      },
+      {
+        "text": "Cannot scroll back through years of photos. The segment that struggles most is people with huge libraries.",
+        "reviewId": "fix-s1-05",
+        "source": "reddit"
+      }
+    ],
+    "estimatedFrequency": 0.097,
+    "impactOnRetrieval": "high",
+    "mvpFeasibility": "medium",
+    "confidence": "high",
+    "actionableInsight": "Heavy-library users need cue search; timeline is not a retrieval method at that scale.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "memories-surface-miss",
+    "label": "MemoriesSurfaceMiss",
+    "summary": "Memories and albums do not retrieve the specific photo the user is looking for.",
+    "researchQuestionIds": [
+      5
+    ],
+    "retrievalFailureType": "retrieve",
+    "rememberedCue": "event",
+    "forgottenCue": "album",
+    "photoKind": "memory",
+    "metricNode": "retrieve",
+    "segmentHints": [
+      "S2"
+    ],
+    "quotes": [
+      {
+        "text": "enue name. Search for the trip does not surface them.",
+        "reviewId": "fix-s2-06",
+        "source": "reddit"
+      },
+      {
+        "text": "Screenshots and memories are mixed. I am looking for a screenshot of a QR code and search shows holiday photos instead.",
+        "reviewId": "fix-ss-01",
+        "source": "play_store"
+      },
+      {
+        "text": "Photos somewhere. Search for trip shows memories not the utility screenshot.",
+        "reviewId": "fix-ss-05",
+        "source": "reddit"
+      },
+      {
+        "text": "Memories showed a random highlight but not the old photo I was actually looking for. Albums did not help either.",
+        "reviewId": "fix-mem-01",
+        "source": "reddit"
+      },
+      {
+        "text": "Google Photos Memories and albums break when I am trying to retrieve a specific old picture I remember.",
+        "reviewId": "fix-mem-02",
+        "source": "app_store"
+      },
+      {
+        "text": "Search, Memories, and albums all missed the photo. I remember the event and still cannot find it on any surface.",
+        "reviewId": "fix-mem-03",
+        "source": "play_store"
+      }
+    ],
+    "estimatedFrequency": 0.125,
+    "impactOnRetrieval": "medium",
+    "mvpFeasibility": "medium",
+    "confidence": "high",
+    "actionableInsight": "Memories is a recap surface, not a find surface; do not count highlights as vague-memory retrieval.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "generic-search-latency",
+    "label": "GenericSearchLatency",
+    "summary": "Some public complaints are about slow search or indexing, not a remembered-but-unfound photo.",
+    "researchQuestionIds": [
+      5
+    ],
+    "retrievalFailureType": "other",
+    "rememberedCue": "other",
+    "forgottenCue": "other",
+    "photoKind": "unknown",
+    "metricNode": "retrieve",
+    "segmentHints": [
+      "S1"
+    ],
+    "quotes": [
+      {
+        "text": "Search is slow and indexing takes forever. The app is laggy. This is not about finding a remembered photo, just performance.",
+        "reviewId": "fix-ops-01",
+        "source": "play_store"
+      },
+      {
+        "text": "Google Photos search is slow on a large library. Ranking feels random. I want faster search quality in general.",
+        "reviewId": "fix-ops-02",
+        "source": "app_store"
+      },
+      {
+        "text": "Search is slow / indexing complaints. I can find photos when I know the keyword. I just want better search ranking speed.",
+        "reviewId": "fix-ops-03",
+        "source": "reddit"
+      }
+    ],
+    "estimatedFrequency": 0.042,
+    "impactOnRetrieval": "low",
+    "mvpFeasibility": "low",
+    "confidence": "medium",
+    "actionableInsight": "Quantify latency separately from vague-memory failure; do not nominate generic search ranking as the MVP.",
+    "genericSearchLeak": true
+  },
+  {
+    "id": "search_by_place_vibe",
+    "label": "search_by_place_vibe",
+    "summary": "LLM-extracted retrieval theme",
+    "researchQuestionIds": [
+      2
+    ],
+    "retrievalFailureType": "understand",
+    "rememberedCue": "other",
+    "forgottenCue": "other",
+    "photoKind": "unknown",
+    "metricNode": "understand",
+    "segmentHints": [],
+    "quotes": [
+      {
+        "text": "Search wants a date or the place name and I forgot both.",
+        "reviewId": "fix-s2-01",
+        "source": "reddit",
+        "url": "https://www.reddit.com/r/googlephotos/comments/goa-cafe"
+      },
+      {
+        "text": "I remember the place vibe and forgot the date so search returns nothing useful.",
+        "reviewId": "fix-s2-05",
+        "source": "youtube"
+      }
+    ],
+    "estimatedFrequency": 0.05,
+    "impactOnRetrieval": "medium",
+    "mvpFeasibility": "medium",
+    "confidence": "medium",
+    "actionableInsight": "Use only grounded quotes to compare retrieval failure modes.",
+    "genericSearchLeak": false
+  },
+  {
+    "id": "search_by_object",
+    "label": "search_by_object",
+    "summary": "LLM-extracted retrieval theme",
+    "researchQuestionIds": [
+      2
+    ],
+    "retrievalFailureType": "understand",
+    "rememberedCue": "other",
+    "forgottenCue": "other",
+    "photoKind": "unknown",
+    "metricNode": "understand",
+    "segmentHints": [],
+    "quotes": [
+      {
+        "text": "I remember the bottle not the date or album.",
+        "reviewId": "fix-s3-01",
+        "source": "play_store"
+      },
+      {
+        "text": "I remember the shop and that I was sick, not the filename or when I screenshotted it.",
+        "reviewId": "fix-s3-02",
+        "source": "reddit",
+        "url": "https://www.reddit.com/r/googlephotos/comments/receipt"
+      }
+    ],
+    "estimatedFrequency": 0.05,
+    "impactOnRetrieval": "medium",
+    "mvpFeasibility": "medium",
+    "confidence": "medium",
+    "actionableInsight": "Use only grounded quotes to compare retrieval failure modes.",
+    "genericSearchLeak": false
+  }
+]

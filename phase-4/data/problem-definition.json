@@ -1,0 +1,74 @@
+{
+  "locked": true,
+  "verdict": "proceed",
+  "generatedAt": "2026-09-22T09:52:07.532Z",
+  "northStar": "Increase the share of users who successfully retrieve a photo they remember but cannot precisely describe when they start searching",
+  "targetSegment": {
+    "code": "S2",
+    "label": "Trip / event rememberer",
+    "definition": "People whose primary Google Photos library is large enough that scrolling is not the find method, who remember a trip or event by vibe (café, lights, boat) and have forgotten the date, album, or town name."
+  },
+  "retrievalScenario": "The café I cannot date — a trip photo the person can still picture (small café, yellow chairs, after the beach) when the capture day and place name are gone.",
+  "productOutcome": {
+    "node": "understand",
+    "label": "Clue-understanding rate — the product accepts vibe, object, episode, and fuzzy time"
+  },
+  "rootCause": "People remember how a place felt on a trip and have forgotten the date, album, and town name, so Search cannot take the clue they still have even though the photo is in the library.",
+  "workarounds": [
+    "still unfound, or found by scroll / a person / another app — not by a precise keyword (G9)"
+  ],
+  "userValue": "Get the intended memory back from the fragments that survived — without reconstructing metadata the person no longer has.",
+  "businessValue": "A library people cannot re-enter becomes a write-only backup. Successful vague-memory retrieval is why they keep capturing, keep backup on, and keep Photos as the default camera roll.",
+  "evolution": [
+    {
+      "beat": "Business metric",
+      "whatChanged": "Locked the north-star as successful vague-memory retrieval per started task — not search CTR."
+    },
+    {
+      "beat": "Product outcomes",
+      "whatChanged": "Split the journey into formulate, understand, retrieve, recognize, refine. Exactly one node can be the bet."
+    },
+    {
+      "beat": "AI-powered discovery",
+      "whatChanged": "Public corpus kept 72 retrieval posts and scored 14 themes. Place-vibe without a name ranked first; generic search latency was flagged and excluded."
+    },
+    {
+      "beat": "Observed user behavior",
+      "whatChanged": "n=6 S2 via the Google Form. People remember place vibe / trip and have forgotten date, album, and town. Photos should take the fragment they still have (G8). Stories end unfound or via scroll / a person / another app — not a precise keyword (G9). First-break node: understand. Phase 6 seeds: task-goa-cafe, task-goa-trip, task-concert-lights, task-houseboat. Query typed and result-grid were not on the form (instrument gaps, labeled not-recovered on those themes)."
+    },
+    {
+      "beat": "Problem definition",
+      "whatChanged": "Accept place-vibe language so trip rememberers can retrieve a photo they still picture but cannot date or name."
+    }
+  ],
+  "evidence": {
+    "discoveryThemeId": "place-vibe-without-name",
+    "discoveryQuotes": [
+      {
+        "text": "I remember that small cafe we went to on the Goa trip but I cannot find the photo. Search wants a date or the place name and I forgot both.",
+        "reviewId": "fix-s2-01",
+        "source": "reddit",
+        "url": "https://www.reddit.com/r/googlephotos/comments/goa-cafe"
+      },
+      {
+        "text": "ooking for that photo of the tiny beach cafe from our vacation. I remember the vibe not the location or when it was taken. Google Photos search is useless for this.",
+        "reviewId": "fix-s2-02",
+        "source": "play_store"
+      },
+      {
+        "text": "I can picture the little cafe during our holiday trip but search does not understand place vibe. I only remember it was somewhere we walked after the beach.",
+        "reviewId": "fix-s2-03",
+        "source": "app_store"
+      }
+    ],
+    "interviews": {
+      "noteCount": 6,
+      "inSegmentCount": 6,
+      "formOnlyCount": 6
+    },
+    "phase3Synthesis": "n=6 S2 via the Google Form. People remember place vibe / trip and have forgotten date, album, and town. Photos should take the fragment they still have (G8). Stories end unfound or via scroll / a person / another app — not a precise keyword (G9). First-break node: understand. Phase 6 seeds: task-goa-cafe, task-goa-trip, task-concert-lights, task-houseboat. Query typed and result-grid were not on the form (instrument gaps, labeled not-recovered on those themes)."
+  },
+  "jobStatement": "Accept place-vibe language so trip rememberers can retrieve a photo they still picture but cannot date or name.",
+  "mvpDirection": "Memory Cue Retrieval on Remember — intelligence at understand (place-vibe language → grouped candidates).",
+  "forbiddenFrame": "Users find it difficult to search for old photos."
+}

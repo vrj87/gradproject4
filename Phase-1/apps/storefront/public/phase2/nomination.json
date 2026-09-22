@@ -1,0 +1,46 @@
+{
+  "opportunityId": "place-vibe-without-name",
+  "label": "PlaceVibeWithoutName",
+  "themeIds": [
+    "place-vibe-without-name"
+  ],
+  "metricNode": "understand",
+  "segmentCode": "S2",
+  "segmentLabel": "Trip / event rememberer",
+  "interviewFocus": "Trip / event rememberers (S2) who remember a place vibe, object, or episode but have forgotten the date, album, or exact place. Probe why retrieval fails despite that partial memory — not whether search is slow.",
+  "rejectedAlternatives": [
+    {
+      "id": "forgotten-date-album",
+      "reason": "Different product outcome (formulate). Part 2 nominates exactly one primary node (A-M05)."
+    },
+    {
+      "id": "object-episode-find",
+      "reason": "Lower score than PlaceVibeWithoutName on 0.4 impact + 0.4 feasibility + 0.2 frequency."
+    },
+    {
+      "id": "unevaluable-results",
+      "reason": "Different product outcome (recognize). Part 2 nominates exactly one primary node (A-M05)."
+    },
+    {
+      "id": "refine-dead-end",
+      "reason": "Different product outcome (refine). Part 2 nominates exactly one primary node (A-M05)."
+    },
+    {
+      "id": "timeline-scroll-workaround",
+      "reason": "Different product outcome (refine). Part 2 nominates exactly one primary node (A-M05)."
+    },
+    {
+      "id": "screenshot-utility",
+      "reason": "Different product outcome (retrieve). Part 2 nominates exactly one primary node (A-M05)."
+    }
+  ],
+  "readyForPhase3": true,
+  "hypothesis": "Accept place-vibe language (small cafe on that trip) instead of demanding a place name or date first.",
+  "mvpTaskIds": [
+    "task-goa-cafe",
+    "task-goa-trip",
+    "task-concert-lights",
+    "task-houseboat"
+  ],
+  "controlTaskId": "task-control-date"
+}

@@ -1,0 +1,23 @@
+{
+  "code": "S2",
+  "label": "Trip / event rememberer",
+  "locked": true,
+  "eligibility": [
+    "Google Photos is the primary library for ≥ 12 months",
+    "Library large enough that scrolling is not the default find method",
+    "Can recall at least one photo they knew existed but failed to find on the first search",
+    "Failed find started from incomplete memory (place vibe / trip), not date / album / filename"
+  ],
+  "disqualify": [
+    "Google / Photos employee or close family of the team",
+    "Known-item search (they had the exact word and search worked)",
+    "Screenshot / medicine / unlabeled-face stories counted toward S2 n"
+  ],
+  "mvpTaskIds": [
+    "task-goa-cafe",
+    "task-goa-trip",
+    "task-concert-lights",
+    "task-houseboat"
+  ],
+  "controlTaskId": "task-control-date"
+}

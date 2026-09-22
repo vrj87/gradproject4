@@ -1,0 +1,11 @@
+{
+  "name": "photos-phase3-form",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fill-form": "node fill-google-form.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}

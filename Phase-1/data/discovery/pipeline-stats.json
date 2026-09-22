@@ -1,0 +1,33 @@
+{
+  "rawCount": 153,
+  "normalizedCount": 72,
+  "droppedMinWords": 63,
+  "droppedIrrelevant": 18,
+  "droppedDuplicates": 0,
+  "chunkCount": 72,
+  "sourceCoverage": {
+    "play_store": 97,
+    "reddit": 23,
+    "app_store": 13,
+    "forum": 12,
+    "youtube": 8
+  },
+  "partialCoverage": [],
+  "extractionMethod": "groq",
+  "validatedThemeCount": 14,
+  "rejectedThemeCount": 0,
+  "researchQuestionGaps": [],
+  "metricNodeGaps": [],
+  "sampleSizeCapped": false,
+  "fixtureCount": 73,
+  "llmStats": {
+    "batchesProcessed": 1,
+    "batchesFailed": 0,
+    "rawThemeCount": 2,
+    "themesMerged": 2,
+    "quoteRepairs": 5,
+    "gapFillThemes": 0
+  },
+  "readyForPhase2": true,
+  "generatedAt": "2026-09-21T10:31:54.243Z"
+}

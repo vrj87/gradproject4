@@ -1,0 +1,20 @@
+{
+  "name": "gradproject4-photos",
+  "private": true,
+  "description": "Google Photos vague-memory retrieval — discovery, ranking, problem, MVP",
+  "scripts": {
+    "phase2:rank": "npm run rank --prefix phase-2",
+    "phase2:test": "npm test --prefix phase-2",
+    "phase3:synthesize": "npm run synthesize --prefix phase-3",
+    "phase3:test": "npm test --prefix phase-3",
+    "phase4:lock": "npm run lock --prefix phase-4",
+    "phase4:test": "npm test --prefix phase-4",
+    "phase5:dev": "npm run dev --prefix Phase-1",
+    "phase5:setup": "npm run setup --prefix phase-5",
+    "phase5:test": "npm test --prefix phase-5 && npm test --prefix Phase-1",
+    "phase6:synthesize": "npm run synthesize --prefix phase-6",
+    "phase6:test": "npm test --prefix phase-6",
+    "dev": "npm run dev --prefix Phase-1",
+    "test": "npm test --prefix Phase-1 && npm test --prefix phase-2 && npm test --prefix phase-3 && npm test --prefix phase-4 && npm test --prefix phase-5 && npm test --prefix phase-6"
+  }
+}

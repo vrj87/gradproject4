@@ -1,0 +1,11 @@
+{
+  "method": "google-form",
+  "part3": "complete",
+  "formUrl": "https://forms.gle/wvQ3pQVQLhxMDFTm9",
+  "responsesUrl": "https://docs.google.com/forms/d/1BWAi4vwNFF5cncIu98H352AY4RcZd7s4aBkTBgI_wXA/edit#responses",
+  "submitted": 6,
+  "inSegmentCount": 6,
+  "knownItemExcluded": true,
+  "attestedAt": "2026-09-22",
+  "note": "Part 3 study method is this form (G1–G9). Counted rows are S2 trip/place-vibe, not screenshot/medicine/known-item. Unique ticks stay in Google; repo notes do not invent verbatim sentences."
+}

@@ -1,0 +1,36 @@
+{
+  "verdict": "proceed",
+  "locked": true,
+  "generatedAt": "2026-09-22T09:52:07.532Z",
+  "interviewCensus": {
+    "noteCount": 6,
+    "inSegmentCount": 6,
+    "formOnlyCount": 6
+  },
+  "gates": [
+    {
+      "id": "n-in-segment",
+      "pass": true,
+      "detail": "in-segment n=6 (need ≥ 5). Form study rows=6. Notes=6."
+    },
+    {
+      "id": "phase3-node",
+      "pass": true,
+      "detail": "Phase 3 first-break=understand matches Phase 2 understand."
+    },
+    {
+      "id": "generic-search",
+      "pass": true,
+      "detail": "PlaceVibeWithoutName is not generic search."
+    },
+    {
+      "id": "known-item",
+      "pass": true,
+      "detail": "G9 drops known-item rows. Counted S2 are incomplete-memory trip/place-vibe."
+    }
+  ],
+  "lockedNode": "understand",
+  "reason": "proceed: conversational / memory-cue MVP",
+  "wouldProceedIfInterviewsConfirm": "proceed: conversational / memory-cue MVP",
+  "jobStatement": "Accept place-vibe language so trip rememberers can retrieve a photo they still picture but cannot date or name."
+}

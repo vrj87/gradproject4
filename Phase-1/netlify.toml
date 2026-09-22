@@ -1,0 +1,41 @@
+[build]
+  command = "npm run build"
+  publish = "apps/storefront/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/api/health"
+  to = "/phase5/mvp.json"
+  status = 200
+
+[[redirects]]
+  from = "/mvp"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/playground"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/dashboard"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/test"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/demo/task/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

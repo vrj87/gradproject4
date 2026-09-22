@@ -1,0 +1,403 @@
+{
+  "northStar": "Successful retrieval of a photo the user remembers but cannot precisely describe when they start searching",
+  "generatedAt": "2026-09-21T10:37:32.630Z",
+  "nodes": [
+    {
+      "id": "formulate",
+      "userBehavior": "Turns incomplete memory into a starting clue",
+      "productOutcome": "Query started from partial memory",
+      "failureQuestion": "Unable to express what they remember?",
+      "subMetric": "Formulation rate",
+      "opportunities": [
+        {
+          "themeId": "forgotten-date-album",
+          "label": "ForgottenDateAlbum",
+          "retrievalFailureType": "formulate",
+          "metricNode": "formulate",
+          "impactOnRetrieval": "high",
+          "mvpFeasibility": "high",
+          "estimatedFrequency": 0.236,
+          "score": 0.847,
+          "rank": 2,
+          "genericSearchFlag": false
+        }
+      ],
+      "scoreSum": 0.847,
+      "primary": false
+    },
+    {
+      "id": "understand",
+      "userBehavior": "Clues are interpreted as visual / metadata attributes",
+      "productOutcome": "System accepts vibe, object, episode, fuzzy time",
+      "failureQuestion": "Product fails to understand the clues?",
+      "subMetric": "Clue-understanding rate",
+      "opportunities": [
+        {
+          "themeId": "place-vibe-without-name",
+          "label": "PlaceVibeWithoutName",
+          "retrievalFailureType": "understand",
+          "metricNode": "understand",
+          "impactOnRetrieval": "high",
+          "mvpFeasibility": "high",
+          "estimatedFrequency": 0.25,
+          "score": 0.85,
+          "rank": 1,
+          "genericSearchFlag": false
+        },
+        {
+          "themeId": "object-episode-find",
+          "label": "ObjectEpisodeFind",
+          "retrievalFailureType": "understand",
+          "metricNode": "understand",
+          "impactOnRetrieval": "high",
+          "mvpFeasibility": "high",
+          "estimatedFrequency": 0.111,
+          "score": 0.822,
+          "rank": 3,
+          "genericSearchFlag": false
+        },
+        {
+          "themeId": "people-without-name",
+          "label": "PeopleWithoutName",
+          "retrievalFailureType": "understand",
+          "metricNode": "understand",
+          "impactOnRetrieval": "medium",
+          "mvpFeasibility": "medium",
+          "estimatedFrequency": 0.125,
+          "score": 0.505,
+          "rank": 9,
+          "genericSearchFlag": false
+        },
+        {
+          "themeId": "search_by_place_vibe",
+          "label": "search_by_place_vibe",
+          "retrievalFailureType": "understand",
+          "metricNode": "understand",
+          "impactOnRetrieval": "medium",
+          "mvpFeasibility": "medium",
+          "estimatedFrequency": 0.05,
+          "score": 0.49,
+          "rank": 12,
+          "genericSearchFlag": false
+        },
+        {
+          "themeId": "search_by_object",
+          "label": "search_by_object",
+          "retrievalFailureType": "understand",
+          "metricNode": "understand",
+          "impactOnRetrieval": "medium",
+          "mvpFeasibility": "medium",
+          "estimatedFrequency": 0.05,
+          "score": 0.49,
+          "rank": 13,
+          "genericSearchFlag": false
+        }
+      ],
+      "scoreSum": 3.157,
+      "primary": true
+    },
+    {
+      "id": "retrieve",
+      "userBehavior": "Target exists in the candidate set",
+      "productOutcome": "Coverage of the remembered photo",
+      "failureQuestion": "Search never surfaces it?",
+      "subMetric": "Candidate coverage",
+      "opportunities": [
+        {
+          "themeId": "screenshot-utility",
+          "label": "ScreenshotUtilityMix",
+          "retrievalFailureType": "retrieve",
+          "metricNode": "retrieve",
+          "impactOnRetrieval": "medium",
+          "mvpFeasibility": "high",
+          "estimatedFrequency": 0.125,
+          "score": 0.665,
+          "rank": 7,
+          "genericSearchFlag": false
+        },
+        {
+          "themeId": "heavy-library",
+          "label": "HeavyLibraryCannotScroll",
+          "retrievalFailureType": "retrieve",
+          "metricNode": "retrieve",
+          "impactOnRetrieval": "high",
+          "mvpFeasibility": "medium",
+          "estimatedFrequency": 0.097,
+          "score": 0.659,
+          "rank": 8,
+          "genericSearchFlag": false
+        },
+        {
+          "themeId": "memories-surface-miss",
+          "label": "MemoriesSurfaceMiss",
+          "retrievalFailureType": "retrieve",
+          "metricNode": "retrieve",
+          "impactOnRetrieval": "medium",
+          "mvpFeasibility": "medium",
+          "estimatedFrequency": 0.125,
+          "score": 0.505,
+          "rank": 10,
+          "genericSearchFlag": false
+        },
+        {
+          "themeId": "ask-someone-else",
+          "label": "AskSomeoneElse",
+          "retrievalFailureType": "retrieve",
+          "metricNode": "retrieve",
+          "impactOnRetrieval": "medium",
+          "mvpFeasibility": "medium",
+          "estimatedFrequency": 0.083,
+          "score": 0.497,
+          "rank": 11,
+          "genericSearchFlag": false
+        }
+      ],
+      "scoreSum": 2.326,
+      "primary": false
+    },
+    {
+      "id": "recognize",
+      "userBehavior": "User can tell the right photo from near-misses",
+      "productOutcome": "Evaluable result grouping",
+      "failureQuestion": "Relevant results hard to evaluate?",
+      "subMetric": "Recognition rate",
+      "opportunities": [
+        {
+          "themeId": "unevaluable-results",
+          "label": "UnevaluableResults",
+          "retrievalFailureType": "recognize",
+          "metricNode": "recognize",
+          "impactOnRetrieval": "high",
+          "mvpFeasibility": "high",
+          "estimatedFrequency": 0.069,
+          "score": 0.814,
+          "rank": 4,
+          "genericSearchFlag": false
+        }
+      ],
+      "scoreSum": 0.814,
+      "primary": false
+    },
+    {
+      "id": "refine",
+      "userBehavior": "Next attempt uses what the last miss taught",
+      "productOutcome": "Successful iteration after a miss",
+      "failureQuestion": "Struggle to refine an unsuccessful search?",
+      "subMetric": "Refinement success",
+      "opportunities": [
+        {
+          "themeId": "refine-dead-end",
+          "label": "RefineDeadEnd",
+          "retrievalFailureType": "refine",
+          "metricNode": "refine",
+          "impactOnRetrieval": "high",
+          "mvpFeasibility": "high",
+          "estimatedFrequency": 0.056,
+          "score": 0.811,
+          "rank": 5,
+          "genericSearchFlag": false
+        },
+        {
+          "themeId": "timeline-scroll-workaround",
+          "label": "TimelineScrollWorkaround",
+          "retrievalFailureType": "refine",
+          "metricNode": "refine",
+          "impactOnRetrieval": "medium",
+          "mvpFeasibility": "high",
+          "estimatedFrequency": 0.167,
+          "score": 0.673,
+          "rank": 6,
+          "genericSearchFlag": false
+        }
+      ],
+      "scoreSum": 1.484,
+      "primary": false
+    }
+  ],
+  "ranking": [
+    {
+      "themeId": "place-vibe-without-name",
+      "label": "PlaceVibeWithoutName",
+      "retrievalFailureType": "understand",
+      "metricNode": "understand",
+      "impactOnRetrieval": "high",
+      "mvpFeasibility": "high",
+      "estimatedFrequency": 0.25,
+      "score": 0.85,
+      "rank": 1,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "forgotten-date-album",
+      "label": "ForgottenDateAlbum",
+      "retrievalFailureType": "formulate",
+      "metricNode": "formulate",
+      "impactOnRetrieval": "high",
+      "mvpFeasibility": "high",
+      "estimatedFrequency": 0.236,
+      "score": 0.847,
+      "rank": 2,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "object-episode-find",
+      "label": "ObjectEpisodeFind",
+      "retrievalFailureType": "understand",
+      "metricNode": "understand",
+      "impactOnRetrieval": "high",
+      "mvpFeasibility": "high",
+      "estimatedFrequency": 0.111,
+      "score": 0.822,
+      "rank": 3,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "unevaluable-results",
+      "label": "UnevaluableResults",
+      "retrievalFailureType": "recognize",
+      "metricNode": "recognize",
+      "impactOnRetrieval": "high",
+      "mvpFeasibility": "high",
+      "estimatedFrequency": 0.069,
+      "score": 0.814,
+      "rank": 4,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "refine-dead-end",
+      "label": "RefineDeadEnd",
+      "retrievalFailureType": "refine",
+      "metricNode": "refine",
+      "impactOnRetrieval": "high",
+      "mvpFeasibility": "high",
+      "estimatedFrequency": 0.056,
+      "score": 0.811,
+      "rank": 5,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "timeline-scroll-workaround",
+      "label": "TimelineScrollWorkaround",
+      "retrievalFailureType": "refine",
+      "metricNode": "refine",
+      "impactOnRetrieval": "medium",
+      "mvpFeasibility": "high",
+      "estimatedFrequency": 0.167,
+      "score": 0.673,
+      "rank": 6,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "screenshot-utility",
+      "label": "ScreenshotUtilityMix",
+      "retrievalFailureType": "retrieve",
+      "metricNode": "retrieve",
+      "impactOnRetrieval": "medium",
+      "mvpFeasibility": "high",
+      "estimatedFrequency": 0.125,
+      "score": 0.665,
+      "rank": 7,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "heavy-library",
+      "label": "HeavyLibraryCannotScroll",
+      "retrievalFailureType": "retrieve",
+      "metricNode": "retrieve",
+      "impactOnRetrieval": "high",
+      "mvpFeasibility": "medium",
+      "estimatedFrequency": 0.097,
+      "score": 0.659,
+      "rank": 8,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "people-without-name",
+      "label": "PeopleWithoutName",
+      "retrievalFailureType": "understand",
+      "metricNode": "understand",
+      "impactOnRetrieval": "medium",
+      "mvpFeasibility": "medium",
+      "estimatedFrequency": 0.125,
+      "score": 0.505,
+      "rank": 9,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "memories-surface-miss",
+      "label": "MemoriesSurfaceMiss",
+      "retrievalFailureType": "retrieve",
+      "metricNode": "retrieve",
+      "impactOnRetrieval": "medium",
+      "mvpFeasibility": "medium",
+      "estimatedFrequency": 0.125,
+      "score": 0.505,
+      "rank": 10,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "ask-someone-else",
+      "label": "AskSomeoneElse",
+      "retrievalFailureType": "retrieve",
+      "metricNode": "retrieve",
+      "impactOnRetrieval": "medium",
+      "mvpFeasibility": "medium",
+      "estimatedFrequency": 0.083,
+      "score": 0.497,
+      "rank": 11,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "search_by_place_vibe",
+      "label": "search_by_place_vibe",
+      "retrievalFailureType": "understand",
+      "metricNode": "understand",
+      "impactOnRetrieval": "medium",
+      "mvpFeasibility": "medium",
+      "estimatedFrequency": 0.05,
+      "score": 0.49,
+      "rank": 12,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "search_by_object",
+      "label": "search_by_object",
+      "retrievalFailureType": "understand",
+      "metricNode": "understand",
+      "impactOnRetrieval": "medium",
+      "mvpFeasibility": "medium",
+      "estimatedFrequency": 0.05,
+      "score": 0.49,
+      "rank": 13,
+      "genericSearchFlag": false
+    },
+    {
+      "themeId": "generic-search-latency",
+      "label": "GenericSearchLatency",
+      "retrievalFailureType": "other",
+      "metricNode": "retrieve",
+      "impactOnRetrieval": "low",
+      "mvpFeasibility": "low",
+      "estimatedFrequency": 0.042,
+      "score": 0.248,
+      "rank": 14,
+      "genericSearchFlag": true
+    }
+  ],
+  "genericSearchExcluded": [
+    {
+      "themeId": "generic-search-latency",
+      "label": "GenericSearchLatency",
+      "retrievalFailureType": "other",
+      "metricNode": "retrieve",
+      "impactOnRetrieval": "low",
+      "mvpFeasibility": "low",
+      "estimatedFrequency": 0.042,
+      "score": 0.248,
+      "rank": 14,
+      "genericSearchFlag": true
+    }
+  ],
+  "emptyNodes": [],
+  "readyForPhase3": true
+}

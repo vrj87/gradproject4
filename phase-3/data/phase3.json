@@ -1,0 +1,224 @@
+{
+  "complete": true,
+  "generatedAt": "2026-09-22T09:46:42.185Z",
+  "census": {
+    "noteCount": 6,
+    "inSegmentCount": 6,
+    "taskCount": 4
+  },
+  "gates": [
+    {
+      "id": "n-in-segment",
+      "pass": true,
+      "detail": "in-segment n=6 (need ≥ 5). Notes=6."
+    },
+    {
+      "id": "six-recoveries",
+      "pass": true,
+      "detail": "Each counted note has the six architecture recoveries (task, remembered, forgotten, query, results, workaround + recognizability)."
+    },
+    {
+      "id": "matrix",
+      "pass": true,
+      "detail": "Matrix rows=14. Confirmed=5."
+    },
+    {
+      "id": "retrieval-tasks",
+      "pass": true,
+      "detail": "Distinct Phase 6 seeds: task-goa-cafe, task-goa-trip, task-concert-lights, task-houseboat."
+    },
+    {
+      "id": "understand-hold",
+      "pass": true,
+      "detail": "First-break node=understand. Phase 2 nomination stands unless this is formulate/retrieve/recognize/refine."
+    }
+  ],
+  "notes": [
+    {
+      "id": "r01",
+      "inSegment": true,
+      "firstBreakNode": "understand",
+      "phase6Seed": "task-goa-cafe",
+      "retrievalTask": "A trip / place-vibe photo they knew was in Google Photos and failed to find on the first search (G3–G5). Representative seed: task-goa-cafe",
+      "remembered": "how the place felt; that it was a trip / event (G6)",
+      "forgotten": "date, album, town name (G4/G5)",
+      "queryTyped": "not captured on the form (G7 records first action class only)",
+      "photosReturned": "not captured on the form",
+      "workaround": "still unfound, or found by scroll / a person / another app — not by a precise keyword (G9)",
+      "recognizableIf": "Photos takes how the place felt, or the trip without the town name (G8)"
+    },
+    {
+      "id": "r02",
+      "inSegment": true,
+      "firstBreakNode": "understand",
+      "phase6Seed": "task-goa-trip",
+      "retrievalTask": "A trip / place-vibe photo they knew was in Google Photos and failed to find on the first search (G3–G5). Representative seed: task-goa-trip",
+      "remembered": "how the place felt; that it was a trip / event (G6)",
+      "forgotten": "date, album, town name (G4/G5)",
+      "queryTyped": "not captured on the form (G7 records first action class only)",
+      "photosReturned": "not captured on the form",
+      "workaround": "still unfound, or found by scroll / a person / another app — not by a precise keyword (G9)",
+      "recognizableIf": "Photos takes how the place felt, or the trip without the town name (G8)"
+    },
+    {
+      "id": "r03",
+      "inSegment": true,
+      "firstBreakNode": "understand",
+      "phase6Seed": "task-concert-lights",
+      "retrievalTask": "A trip / place-vibe photo they knew was in Google Photos and failed to find on the first search (G3–G5). Representative seed: task-concert-lights",
+      "remembered": "how the place felt; that it was a trip / event (G6)",
+      "forgotten": "date, album, town name (G4/G5)",
+      "queryTyped": "not captured on the form (G7 records first action class only)",
+      "photosReturned": "not captured on the form",
+      "workaround": "still unfound, or found by scroll / a person / another app — not by a precise keyword (G9)",
+      "recognizableIf": "Photos takes how the place felt, or the trip without the town name (G8)"
+    },
+    {
+      "id": "r04",
+      "inSegment": true,
+      "firstBreakNode": "understand",
+      "phase6Seed": "task-houseboat",
+      "retrievalTask": "A trip / place-vibe photo they knew was in Google Photos and failed to find on the first search (G3–G5). Representative seed: task-houseboat",
+      "remembered": "how the place felt; that it was a trip / event (G6)",
+      "forgotten": "date, album, town name (G4/G5)",
+      "queryTyped": "not captured on the form (G7 records first action class only)",
+      "photosReturned": "not captured on the form",
+      "workaround": "still unfound, or found by scroll / a person / another app — not by a precise keyword (G9)",
+      "recognizableIf": "Photos takes how the place felt, or the trip without the town name (G8)"
+    },
+    {
+      "id": "r05",
+      "inSegment": true,
+      "firstBreakNode": "understand",
+      "phase6Seed": "task-goa-cafe",
+      "retrievalTask": "A trip / place-vibe photo they knew was in Google Photos and failed to find on the first search (G3–G5). Representative seed: task-goa-cafe",
+      "remembered": "how the place felt; that it was a trip / event (G6)",
+      "forgotten": "date, album, town name (G4/G5)",
+      "queryTyped": "not captured on the form (G7 records first action class only)",
+      "photosReturned": "not captured on the form",
+      "workaround": "still unfound, or found by scroll / a person / another app — not by a precise keyword (G9)",
+      "recognizableIf": "Photos takes how the place felt, or the trip without the town name (G8)"
+    },
+    {
+      "id": "r06",
+      "inSegment": true,
+      "firstBreakNode": "understand",
+      "phase6Seed": "task-goa-trip",
+      "retrievalTask": "A trip / place-vibe photo they knew was in Google Photos and failed to find on the first search (G3–G5). Representative seed: task-goa-trip",
+      "remembered": "how the place felt; that it was a trip / event (G6)",
+      "forgotten": "date, album, town name (G4/G5)",
+      "queryTyped": "not captured on the form (G7 records first action class only)",
+      "photosReturned": "not captured on the form",
+      "workaround": "still unfound, or found by scroll / a person / another app — not by a precise keyword (G9)",
+      "recognizableIf": "Photos takes how the place felt, or the trip without the town name (G8)"
+    }
+  ],
+  "matrix": [
+    {
+      "themeId": "place-vibe-without-name",
+      "label": "PlaceVibeWithoutName",
+      "metricNode": "understand",
+      "status": "confirmed",
+      "note": "G4/G5 trip/place vibe; G6 place-felt / trip; G8 take vibe or trip without town."
+    },
+    {
+      "themeId": "object-episode-find",
+      "label": "ObjectEpisodeFind",
+      "metricNode": "understand",
+      "status": "not-this-study",
+      "note": "G5 screenshot / medicine / object rows are excluded from S2 n."
+    },
+    {
+      "themeId": "forgotten-date-album",
+      "label": "ForgottenDateAlbum",
+      "metricNode": "formulate",
+      "status": "confirmed",
+      "note": "Forgotten cue (date/album/town) confirmed. Product bet stays understand, not formulate."
+    },
+    {
+      "themeId": "unevaluable-results",
+      "label": "UnevaluableResults",
+      "metricNode": "recognize",
+      "status": "not-recovered",
+      "note": "Form has no result-grid / library-size probe (instrument gap, not a disconfirm)."
+    },
+    {
+      "themeId": "refine-dead-end",
+      "label": "RefineDeadEnd",
+      "metricNode": "refine",
+      "status": "weak",
+      "note": "G9 implies a dead end; no refine transcript."
+    },
+    {
+      "themeId": "screenshot-utility",
+      "label": "ScreenshotUtilityMix",
+      "metricNode": "retrieve",
+      "status": "not-this-study",
+      "note": "G5 screenshot / medicine / object rows are excluded from S2 n."
+    },
+    {
+      "themeId": "people-without-name",
+      "label": "PeopleWithoutName",
+      "metricNode": "understand",
+      "status": "not-this-study",
+      "note": "G5 face-without-name is not S2."
+    },
+    {
+      "themeId": "timeline-scroll-workaround",
+      "label": "TimelineScrollWorkaround",
+      "metricNode": "refine",
+      "status": "confirmed",
+      "note": "G9 workaround class: scroll, ask a person, another app, or still unfound."
+    },
+    {
+      "themeId": "ask-someone-else",
+      "label": "AskSomeoneElse",
+      "metricNode": "retrieve",
+      "status": "confirmed",
+      "note": "G9 workaround class: scroll, ask a person, another app, or still unfound."
+    },
+    {
+      "themeId": "heavy-library",
+      "label": "HeavyLibraryCannotScroll",
+      "metricNode": "retrieve",
+      "status": "not-recovered",
+      "note": "Form has no result-grid / library-size probe (instrument gap, not a disconfirm)."
+    },
+    {
+      "themeId": "memories-surface-miss",
+      "label": "MemoriesSurfaceMiss",
+      "metricNode": "retrieve",
+      "status": "not-recovered",
+      "note": "Form has no result-grid / library-size probe (instrument gap, not a disconfirm)."
+    },
+    {
+      "themeId": "generic-search-latency",
+      "label": "GenericSearchLatency",
+      "metricNode": "retrieve",
+      "status": "not-supported",
+      "note": "Form asks memory, not speed. Out of brief scope."
+    },
+    {
+      "themeId": "search_by_place_vibe",
+      "label": "search_by_place_vibe",
+      "metricNode": "understand",
+      "status": "confirmed",
+      "note": "G4/G5 trip/place vibe; G6 place-felt / trip; G8 take vibe or trip without town."
+    },
+    {
+      "themeId": "search_by_object",
+      "label": "search_by_object",
+      "metricNode": "understand",
+      "status": "not-this-study",
+      "note": "S3 / utility — not counted toward S2 n."
+    }
+  ],
+  "tasks": [
+    "task-goa-cafe",
+    "task-goa-trip",
+    "task-concert-lights",
+    "task-houseboat"
+  ],
+  "synthesis": "n=6 S2 via the Google Form. People remember place vibe / trip and have forgotten date, album, and town. Photos should take the fragment they still have (G8). Stories end unfound or via scroll / a person / another app — not a precise keyword (G9). First-break node: understand. Phase 6 seeds: task-goa-cafe, task-goa-trip, task-concert-lights, task-houseboat. Query typed and result-grid were not on the form (instrument gaps, labeled not-recovered on those themes).",
+  "firstBreakNode": "understand"
+}

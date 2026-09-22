@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>NL_GooglePhotos</title>
+    <style>
+      @page {
+        size: 13.333in 7.5in;
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #202124;
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      }
+      .slide {
+        width: 13.333in;
+        height: 7.5in;
+        padding: 0.62in 0.72in 0.55in;
+        page-break-after: always;
+        break-after: page;
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+      }
+      .slide:last-child {
+        page-break-after: auto;
+      }
+      .kicker {
+        font-size: 15pt;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #5f6368;
+        font-weight: 600;
+        margin: 0 0 0.22in;
+      }
+      h1 {
+        font-size: 28pt;
+        line-height: 1.22;
+        font-weight: 650;
+        margin: 0 0 0.28in;
+        color: #1a365d;
+        max-width: 11.6in;
+      }
+      p,
+      li {
+        font-size: 16pt;
+        line-height: 1.4;
+        color: #3c4043;
+      }
+      .lead {
+        margin: 0 0 0.28in;
+        max-width: 11.4in;
+      }
+      .row {
+        display: flex;
+        gap: 0.22in;
+      }
+      .card {
+        flex: 1;
+        background: #f8f9fa;
+        border: 1px solid #dadce0;
+        border-radius: 10px;
+        padding: 0.2in 0.22in;
+      }
+      .card b {
+        display: block;
+        font-size: 14pt;
+        color: #202124;
+        margin-bottom: 0.06in;
+      }
+      .card p,
+      .card li {
+        font-size: 14pt;
+        margin: 0;
+      }
+      .card.bet {
+        background: #e8f0fe;
+        border-color: #1a73e8;
+      }
+      .card.bet b::after {
+        content: "  ·  our bet";
+        color: #174ea6;
+        font-weight: 600;
+      }
+      .foot {
+        position: absolute;
+        left: 0.72in;
+        right: 0.72in;
+        bottom: 0.32in;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12pt;
+        color: #5f6368;
+        border-top: 1px solid #e8eaed;
+        padding-top: 0.12in;
+      }
+      .foot a {
+        color: #174ea6;
+        text-decoration: none;
+      }
+      ol.plain,
+      ul.plain {
+        margin: 0;
+        padding-left: 0.28in;
+      }
+      .quote {
+        background: #f8f9fa;
+        border-left: 6px solid #1a73e8;
+        padding: 0.2in 0.26in;
+        margin: 0 0 0.22in;
+        font-size: 17pt;
+        line-height: 1.38;
+        color: #202124;
+      }
+      .muted {
+        color: #5f6368;
+        font-size: 13pt;
+      }
+      .steps {
+        display: flex;
+        gap: 0.12in;
+        align-items: stretch;
+      }
+      .steps .card {
+        text-align: left;
+      }
+      .num {
+        display: inline-block;
+        min-width: 0.28in;
+        color: #174ea6;
+        font-weight: 700;
+        font-size: 14pt;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="slide">
+      <p class="kicker">Google Photos · Core Experience</p>
+      <h1>The job is finding a photo you still picture — not a better search box</h1>
+      <p class="lead">
+        People start with a fragment of memory. Success is opening the photo they meant. Faster indexing or a
+        smarter keyword rank is a different product.
+      </p>
+      <div class="row">
+        <article class="card bet">
+          <b>In scope</b>
+          <p>Share of searches that retrieve a photo the person still pictures but cannot precisely describe.</p>
+        </article>
+        <article class="card">
+          <b>Out of scope</b>
+          <p>Search latency, ranking of exact keywords, and “make search feel faster.”</p>
+        </article>
+      </div>
+      <div class="foot">
+        <span>Google Photos · retrieval of incomplete memory</span>
+        <span>1 / 10</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">Where the number actually moves</p>
+      <h1>That number only moves if Photos understands the clue the person still has</h1>
+      <p class="lead">One bet. The other steps stay healthy; they are not a second product.</p>
+      <div class="row steps">
+        <article class="card"><b>1. Speak</b><p>Say what is left of the memory.</p></article>
+        <article class="card bet"><b>2. Understand</b><p>Accept vibe, object, or episode — not a date first.</p></article>
+        <article class="card"><b>3. Surface</b><p>Show a set that can be judged.</p></article>
+        <article class="card"><b>4. Recognize</b><p>The person opens the intended photo.</p></article>
+        <article class="card"><b>5. Refine</b><p>“More like this” or “not this trip.”</p></article>
+      </div>
+      <div class="foot">
+        <span>Bet labeled in words, not by colour alone</span>
+        <span>2 / 10</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">How we listened — the only process slide</p>
+      <h1>Public voice becomes ranked retrieval problems — not a sentiment dashboard</h1>
+      <div class="row steps">
+        <article class="card"><span class="num">1</span><b>Listen</b><p>Public photo talk: stores, forums, community posts.</p></article>
+        <article class="card"><span class="num">2</span><b>Keep</b><p>Stories about a failed find. Drop storage and star-rating noise.</p></article>
+        <article class="card"><span class="num">3</span><b>Group</b><p>Themes that share at least two real quotes.</p></article>
+        <article class="card"><span class="num">4</span><b>Score</b><p>Impact, feasibility, and how often it appears.</p></article>
+        <article class="card"><span class="num">5</span><b>Drop</b><p>“Search is slow” is not this job.</p></article>
+      </div>
+      <div class="foot">
+        <span>One funnel. Not a review-star average.</span>
+        <span>3 / 10</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">What we ranked — and what we refused</p>
+      <h1>Place without a name is the first problem we will solve. Generic search we refused.</h1>
+      <p class="lead">People remember how a café felt and have forgotten the town.</p>
+      <div class="row">
+        <article class="card bet">
+          <b>We will solve</b>
+          <p>A trip photo they can still picture when the place name and the date are gone.</p>
+        </article>
+        <article class="card">
+          <b>We will not solve here</b>
+          <p>Search latency. Screenshot file names. “Search feels slow.”</p>
+        </article>
+      </div>
+      <div class="foot">
+        <span>Highest-ranked retrieval theme: place without a name</span>
+        <span>4 / 10</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">What people still have — and what they have lost</p>
+      <h1>They remember the vibe of a trip. They have forgotten the date and the town.</h1>
+      <p class="quote">“That small café we went to during our Goa trip.”</p>
+      <p class="lead">
+        Six people in this audience described the same miss: the photo is in Google Photos, the first search
+        failed, and what survived was a feeling — not a date, album, or town.
+      </p>
+      <p class="muted">Public reviews say the same thing. This is a trip rememberer, not a screenshot or a medicine pack.</p>
+      <div class="foot">
+        <span>Study of six trip rememberers</span>
+        <span>5 / 10</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">Why retrieval fails anyway</p>
+      <h1>Search cannot take the fragment that survived — even though the photo is already in the library</h1>
+      <p class="lead">
+        People remember how a place felt on a trip and have forgotten the date, the album, and the town name.
+        The product asks for metadata they no longer have.
+      </p>
+      <div class="row">
+        <article class="card"><b>Today they</b><p>Scroll. Ask someone. Try another phone. Or give up.</p></article>
+        <article class="card"><b>Not the frame</b><p>“Users find old photos hard to search.” That sentence hides the cause.</p></article>
+      </div>
+      <div class="foot">
+        <span>Root cause in one sentence</span>
+        <span>6 / 10</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">Why this audience, why Photos</p>
+      <h1>Trip rememberers get the memory back. Photos stays the camera roll they can re-enter.</h1>
+      <div class="row">
+        <article class="card">
+          <b>For the person</b>
+          <p>Find the photo from what is left of the memory — without reconstructing a date they no longer have.</p>
+        </article>
+        <article class="card">
+          <b>For Photos</b>
+          <p>A library you cannot re-enter becomes a write-only backup. That is a risk to capture and to backup.</p>
+        </article>
+      </div>
+      <div class="foot">
+        <span>Audience: people who remember a trip by how it felt</span>
+        <span>7 / 10</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">What we built</p>
+      <h1>Remember puts intelligence at the moment of understanding: a vibe in, a trip group out</h1>
+      <div class="row">
+        <article class="card"><span class="num">1</span><b>Offer a fragment</b><p>Type or speak what is left. Never a date first.</p></article>
+        <article class="card"><span class="num">2</span><b>See a trip group</b><p>Photos groups the trip and says why this set.</p></article>
+        <article class="card"><span class="num">3</span><b>Confirm or steer</b><p>Open the photo, or say “not this trip.”</p></article>
+      </div>
+      <p class="lead" style="margin-top: 0.28in">
+        Keyword Search stays the control. Remember is a different path — not a second search box.
+      </p>
+      <div class="foot">
+        <span>Try the prototype · <a href="http://localhost:3000/mvp">localhost:3000/mvp</a></span>
+        <span>8 / 10</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">What happened when people came back</p>
+      <h1>People found the café, the trip, and the gig. Next: keep grouping by trip.</h1>
+      <div class="row">
+        <article class="card">
+          <b>Keyword search</b>
+          <p>Mixed albums. 70, 38, and 26 photos in one pile. The intended photo was in there — not findable.</p>
+        </article>
+        <article class="card bet">
+          <b>Remember</b>
+          <p>The intended photo sat in a named trip group: Goa trip, Goa trip, Nights out.</p>
+        </article>
+        <article class="card">
+          <b>Change next</b>
+          <p>Keep grouping by trip. Do not treat a mixed keyword pile as success.</p>
+        </article>
+      </div>
+      <p class="muted" style="margin-top: 0.22in">Three return sessions with the same audience. Prototype library — not their Google Photos account.</p>
+      <div class="foot">
+        <span>A mixed keyword pile is not a find</span>
+        <span>9 / 10</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">How we will know — and how it could fail</p>
+      <h1>We will know it worked when more of these searches end on the right photo</h1>
+      <div class="row">
+        <article class="card">
+          <b>We will watch</b>
+          <ul class="plain">
+            <li>A fragment offered without a date</li>
+            <li>Photos accepting that fragment</li>
+            <li>The photo in the first group</li>
+            <li>The person opening it</li>
+          </ul>
+        </article>
+        <article class="card">
+          <b>It can still fail</b>
+          <ul class="plain">
+            <li>It is read as a search upgrade — keep keyword Search as the control</li>
+            <li>The model invents a date or a town — use only what the person said or what is on the photo</li>
+            <li>Success is from a rehearsed demo — test on the person’s own memory next</li>
+          </ul>
+        </article>
+      </div>
+      <p class="muted" style="margin-top: 0.2in">Prototype signals only. Not Google Photos production telemetry.</p>
+      <div class="foot">
+        <span>Three risks, each with a next step</span>
+        <span>10 / 10</span>
+      </div>
+    </section>
+  </body>
+</html>

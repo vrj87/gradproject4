@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "generatedAt": "2026-09-22T10:03:00.572Z",
+  "locked": true,
+  "verdict": "proceed",
+  "node": "understand",
+  "jobStatement": "Accept place-vibe language so trip rememberers can retrieve a photo they still picture but cannot date or name.",
+  "librarySize": 129,
+  "surfaces": [
+    "/?view=mvp&task=task-goa-cafe",
+    "/mvp",
+    "/playground",
+    "/dashboard",
+    "/demo/task/task-goa-cafe",
+    "/api/health"
+  ],
+  "gates": [
+    {
+      "id": "phase4-lock",
+      "pass": true,
+      "detail": "Phase 4 proceed · understand."
+    },
+    {
+      "id": "understand-job",
+      "pass": true,
+      "detail": "Accept place-vibe language so trip rememberers can retrieve a photo they still picture but cannot date or name."
+    },
+    {
+      "id": "library-size",
+      "pass": true,
+      "detail": "Seed library n=129 (need 80–150)."
+    },
+    {
+      "id": "forbidden-frame",
+      "pass": true,
+      "detail": "Job is not the forbidden generic-search frame."
+    }
+  ]
+}
