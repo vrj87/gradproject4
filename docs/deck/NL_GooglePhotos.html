@@ -266,6 +266,24 @@
         font-weight: 700;
         text-decoration: none;
       }
+      .closing .card {
+        padding: 0.18in 0.24in;
+      }
+      .closing .plain li {
+        font-size: 12.5pt;
+        line-height: 1.3;
+        margin-bottom: 0.06in;
+      }
+      .closing .divider {
+        margin: 0.2in 0;
+      }
+      .closing .guardrails {
+        margin: 0;
+        max-width: 11.5in;
+        font-size: 12.5pt;
+        line-height: 1.32;
+        font-style: normal;
+      }
     </style>
   </head>
   <body>
@@ -496,7 +514,7 @@
       </div>
     </section>
 
-    <section class="slide">
+    <section class="slide closing">
       <p class="kicker">Success metrics & risks</p>
       <h1>We will know it worked when more of these searches end on the right photo</h1>
       <div class="row">
@@ -520,7 +538,7 @@
         </article>
       </div>
       <div class="divider"></div>
-      <p class="muted">Guardrails: a known-date task should still succeed in Search; the system must not invent capture dates or location metadata. Metrics are prototype signals, not Google Photos production telemetry.</p>
+      <p class="muted guardrails">Guardrails: known-date searches should still succeed in Search; Remember must not invent capture dates or location metadata. Metrics are prototype signals, not Google Photos product metrics.</p>
       <div class="foot">
         <span>Three risks, each with a mitigation</span>
         <span class="slide-num">10 / 10</span>
