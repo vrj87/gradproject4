@@ -49,7 +49,7 @@ For the person: find the photo from what is left of the memory. For Photos: a li
 
 Type or speak a fragment — never a date first. Photos groups the trip and says why. Open the photo, or say “not this trip.” Keyword Search stays the control.
 
-*Evidence:* Try the prototype: http://localhost:3000/mvp
+*Evidence:* Deployed prototype: https://remember-photos.netlify.app/?view=photos
 
 ## 9. People found the café, the trip, and the gig. Next: keep grouping by trip.
 
@@ -61,5 +61,4 @@ Three return sessions. Keyword search mixed albums (70, 38, and 26 photos). Reme
 
 We watch: a fragment offered without a date; Photos accepting that fragment; the photo in the first group; the person opening it. Risks: it is read as a search upgrade; the model invents a date or a town; success is from a rehearsed demo.
 
-*Evidence:* Prototype signals only — not Google Photos production telemetry.
-
+*Evidence:* Metrics are prototype signals, not Google Photos production telemetry.
