@@ -114,7 +114,6 @@ export function Phase2View({
             <h2>{nomination.label}</h2>
             <p>
               {nomination.metricNode} · {nomination.segmentLabel}
-              {nomination.readyForPhase3 ? " · ready for research" : " · blocked until Discovery is ready"}
             </p>
             <p>{nomination.hypothesis}</p>
             <p>{nomination.interviewFocus}</p>

@@ -6,6 +6,8 @@ Google Photos vague-memory retrieval. Reviewer-testable pipeline: scrape → nor
 
 Connect the repository to Netlify without overriding its build settings. The root `netlify.toml` selects `Phase-1`, builds the storefront, and publishes its static output with an SPA fallback. Set the site name and custom domain in Netlify; neither is required in this repository.
 
+**Production storefront:** [https://remember-photos.netlify.app/?view=photos](https://remember-photos.netlify.app/?view=photos)
+
 This deploy is static. The `/api/*` handlers in `apps/storefront/vite.config.ts` run only in development, so Netlify does not provide LLM-backed conversation or transcription, event/session APIs, or persistent quote and MVP-test submissions. The app can still use its bundled data and rule-based client fallback. No Netlify environment variables are required for the static build; adding `GROQ_API_KEY` alone will not enable the development API on Netlify.
 
 ```bash

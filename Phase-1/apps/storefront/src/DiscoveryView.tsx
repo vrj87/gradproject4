@@ -96,8 +96,10 @@ export function DiscoveryView({
     <>
       <h1 className="page-title">Discovery</h1>
       <p className="page-lede">
-        Public photo-retrieval talk, compared — not sentiment. Ready for the metric breakdown
-        {stats.readyForPhase2 ? "." : " after the pipeline fills Q1–Q10."}
+        Public photo-retrieval talk, compared — not sentiment.{" "}
+        {stats.readyForPhase2
+          ? "Explore the ranked opportunities."
+          : "More relevant public feedback is needed before opportunities can be ranked."}
       </p>
 
       <aside className="try-this">
@@ -240,7 +242,7 @@ function WorkflowTab({
         ))}
       </div>
       <p className="hint">
-        Seed fixtures fill Q1–Q10 when a live scrape is thin. Compare uses scored themes, not star ratings.
+        Seed fixtures help cover gaps when a live scrape is thin. Compare uses scored themes, not star ratings.
         Dropped {stats.droppedIrrelevant} off-topic posts
         {typeof stats.droppedMinWords === "number" ? ` and ${stats.droppedMinWords} too-short rows` : ""}.
       </p>

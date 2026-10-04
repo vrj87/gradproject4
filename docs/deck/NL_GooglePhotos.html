@@ -15,20 +15,22 @@
       body {
         margin: 0;
         padding: 0;
-        background: #f5f5f5;
-        color: #202124;
-        font-family: "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        background: #f5f2ef;
+        color: #25243d;
+        font-family: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
       }
       .slide {
         width: 13.333in;
         height: 7.5in;
-        padding: 0.6in 0.85in 0.55in;
+        padding: 0.62in 0.82in 0.58in;
         page-break-after: always;
         break-after: page;
         position: relative;
         overflow: hidden;
-        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-        box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        background:
+          radial-gradient(ellipse at 100% 100%, rgba(244, 201, 93, 0.12), transparent 32%),
+          radial-gradient(ellipse at 0% 0%, rgba(112, 86, 216, 0.07), transparent 27%),
+          #fffefd;
       }
       .slide:last-child {
         page-break-after: auto;
@@ -40,15 +42,15 @@
         left: 0;
         right: 0;
         height: 0.12in;
-        background: linear-gradient(90deg, #4285f4 0%, #34a853 33%, #fbbc05 66%, #ea4335 100%);
+        background: linear-gradient(90deg, #1a9b91 0%, #7056d8 52%, #f18f75 100%);
       }
       .kicker {
         font-size: 13pt;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        color: #5f6368;
+        color: #7056d8;
         font-weight: 700;
-        margin: 0 0 0.22in;
+        margin: 0 0 0.18in;
         display: flex;
         align-items: center;
         gap: 0.12in;
@@ -57,35 +59,35 @@
         content: "";
         width: 0.07in;
         height: 0.07in;
-        background: #4285f4;
+        background: linear-gradient(135deg, #7056d8, #f18f75);
         border-radius: 50%;
       }
       h1 {
-        font-size: 30pt;
-        line-height: 1.18;
+        font-size: 29pt;
+        line-height: 1.15;
         font-weight: 700;
-        margin: 0 0 0.3in;
-        color: #1a73e8;
+        margin: 0 0 0.24in;
+        color: #25243d;
         max-width: 11.5in;
         letter-spacing: -0.01em;
       }
       h2 {
         font-size: 20pt;
         font-weight: 600;
-        color: #202124;
+        color: #25243d;
         margin: 0 0 0.15in;
       }
       p,
       li {
         font-size: 16pt;
         line-height: 1.45;
-        color: #3c4043;
+        color: #49485f;
       }
       .lead {
         margin: 0 0 0.3in;
         max-width: 11.5in;
         font-size: 18pt;
-        color: #202124;
+        color: #49485f;
         font-weight: 400;
       }
       .row {
@@ -94,16 +96,16 @@
       }
       .card {
         flex: 1;
-        background: #ffffff;
-        border: 1px solid #e8eaed;
-        border-radius: 14px;
-        padding: 0.3in 0.35in;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid #e8e3ef;
+        border-radius: 15px;
+        padding: 0.24in 0.28in;
+        box-shadow: 0 8px 22px rgba(48, 37, 88, 0.07);
       }
       .card b {
         display: block;
         font-size: 15pt;
-        color: #202124;
+        color: #25243d;
         margin-bottom: 0.1in;
         font-weight: 700;
       }
@@ -111,46 +113,46 @@
       .card li {
         font-size: 15pt;
         margin: 0;
-        color: #5f6368;
+        color: #5d5a70;
       }
       .card.bet {
-        background: linear-gradient(135deg, #e8f0fe 0%, #d2e3fc 100%);
-        border-color: #4285f4;
-        box-shadow: 0 4px 12px rgba(66, 133, 244, 0.15);
+        background: linear-gradient(145deg, #f1edff 0%, #f8f5ff 100%);
+        border-color: #d8cff8;
+        box-shadow: 0 8px 22px rgba(91, 68, 173, 0.1);
       }
       .card.bet b {
-        color: #1a73e8;
+        color: #5f49c6;
       }
       .card.bet b::after {
-        content: "  ·  OUR BET";
-        color: #174ea6;
+        content: "  ·  PRODUCT BET";
+        color: #5f49c6;
         font-weight: 700;
         font-size: 11pt;
         letter-spacing: 0.05em;
       }
       .foot {
         position: absolute;
-        left: 0.85in;
-        right: 0.85in;
-        bottom: 0.35in;
+        left: 0.82in;
+        right: 0.82in;
+        bottom: 0.32in;
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-size: 12pt;
-        color: #5f6368;
-        border-top: 2px solid #e8eaed;
+        color: #716d82;
+        border-top: 1px solid #e7e2ec;
         padding-top: 0.18in;
       }
       .foot a {
-        color: #1a73e8;
+        color: #5f49c6;
         text-decoration: none;
         font-weight: 600;
       }
       .foot .slide-num {
-        background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
-        color: white;
+        background: #eeeaff;
+        color: #5142a4;
         padding: 0.07in 0.22in;
-        border-radius: 11px;
+        border-radius: 12px;
         font-weight: 600;
       }
       ol.plain,
@@ -162,19 +164,19 @@
         margin-bottom: 0.1in;
       }
       .quote {
-        background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f4 100%);
-        border-left: 5px solid #4285f4;
+        background: #f6f3ff;
+        border-left: 4px solid #7056d8;
         padding: 0.25in 0.3in;
         margin: 0 0 0.25in;
         font-size: 19pt;
         line-height: 1.35;
-        color: #202124;
-        border-radius: 0 11px 11px 0;
+        color: #25243d;
+        border-radius: 0 10px 10px 0;
         font-style: italic;
         box-shadow: 0 2px 6px rgba(0,0,0,0.04);
       }
       .muted {
-        color: #5f6368;
+        color: #706b80;
         font-size: 14pt;
         font-style: italic;
       }
@@ -193,7 +195,7 @@
         height: 0.32in;
         line-height: 0.32in;
         text-align: center;
-        background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+        background: linear-gradient(135deg, #7056d8 0%, #1a9b91 100%);
         color: white;
         border-radius: 50%;
         font-weight: 700;
@@ -202,18 +204,18 @@
       }
       .divider {
         height: 0.04in;
-        background: linear-gradient(90deg, transparent, #e8eaed, transparent);
+        background: linear-gradient(90deg, transparent, #dcd5f5, #f7d5cd, transparent);
         margin: 0.35in 0;
       }
       .highlight {
-        background: linear-gradient(120deg, #fff3cd 0%, #ffeaa7 100%);
+        background: linear-gradient(120deg, #fff4d6 0%, #ffe5d6 100%);
         padding: 0.04in 0.08in;
         border-radius: 4px;
       }
       .metric-pill {
         display: inline-block;
-        background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-        color: #2e7d32;
+        background: linear-gradient(135deg, #e9e3ff 0%, #d9f3ef 100%);
+        color: #5142a4;
         padding: 0.06in 0.18in;
         border-radius: 18px;
         font-size: 13pt;
@@ -229,19 +231,114 @@
       .table td {
         padding: 0.12in 0.15in;
         text-align: left;
-        border-bottom: 1px solid #e8eaed;
-        font-size: 15pt;
+        border-bottom: 1px solid #e8e3ef;
+        font-size: 13.5pt;
       }
       .table th {
-        background: #f8f9fa;
+        background: #f0edfa;
         font-weight: 700;
-        color: #202124;
+        color: #3b3558;
       }
       .table tr:last-child td {
         border-bottom: none;
       }
       .small {
-        font-size: 14pt;
+        font-size: 13.5pt;
+      }
+      .table.compact th,
+      .table.compact td {
+        padding: 0.1in 0.12in;
+        font-size: 12.5pt;
+        line-height: 1.28;
+        vertical-align: top;
+      }
+      .table.compact th:first-child,
+      .table.compact td:first-child {
+        width: 25%;
+      }
+      .table.compact th:nth-child(2),
+      .table.compact td:nth-child(2) {
+        width: 16%;
+      }
+      .table.compact th:last-child,
+      .table.compact td:last-child {
+        width: 59%;
+      }
+      .study-link {
+        color: #5f49c6;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .slide:first-of-type {
+        background:
+          radial-gradient(ellipse at 88% 16%, rgba(241, 143, 117, 0.42), transparent 31%),
+          radial-gradient(ellipse at 6% 100%, rgba(26, 155, 145, 0.46), transparent 42%),
+          linear-gradient(135deg, #282345 0%, #342b5b 58%, #43366c 100%);
+      }
+      .slide:first-of-type::before {
+        background: linear-gradient(90deg, #f4c95d, #f18f75, #c5b5ff, #72d2c3);
+      }
+      .slide:first-of-type .kicker,
+      .slide:first-of-type h1,
+      .slide:first-of-type .lead {
+        color: #fffdf8;
+      }
+      .slide:first-of-type .kicker::before {
+        background: #f4c95d;
+      }
+      .slide:first-of-type .card {
+        background: rgba(255, 255, 255, 0.94);
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+      .slide:first-of-type .card.bet {
+        background: linear-gradient(145deg, #f1edff 0%, #f8f5ff 100%);
+        border-color: #d8cff8;
+      }
+      .slide:first-of-type .foot {
+        color: #eeeaff;
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+      .slide:first-of-type .slide-num {
+        background: rgba(255, 255, 255, 0.16);
+        color: #fffdf8;
+      }
+      .closing .card {
+        padding: 0.18in 0.24in;
+      }
+      .closing .plain li {
+        font-size: 12.5pt;
+        line-height: 1.3;
+        margin-bottom: 0.06in;
+      }
+      .closing .divider {
+        margin: 0.2in 0;
+      }
+      .closing .guardrails {
+        margin: 0;
+        max-width: 11.5in;
+        font-size: 12.5pt;
+        line-height: 1.32;
+        font-style: normal;
+      }
+      .research-analysis .card {
+        padding: 0.14in 0.18in;
+      }
+      .research-analysis .plain {
+        padding-left: 0.22in;
+      }
+      .research-analysis .plain li {
+        font-size: 11.5pt;
+        line-height: 1.2;
+        margin-bottom: 0.04in;
+      }
+      .research-analysis .divider {
+        margin: 0.12in 0;
+      }
+      .research-analysis .muted {
+        margin: 0;
+        font-size: 11.5pt;
+        line-height: 1.25;
+        font-style: normal;
       }
     </style>
   </head>
@@ -299,7 +396,7 @@
         <article class="card"><span class="num">5</span><b>Drop</b><p class="small">"Search is slow" is not this job.</p></article>
       </div>
       <div class="divider"></div>
-      <p class="muted">Research questions (Q1–Q10): photo kinds struggle, remembered vs forgotten cues, formulation methods, where search breaks, workarounds, evaluable vs overwhelming results, refinement behavior, segment differences.</p>
+      <p class="muted">Research covered: photo kinds people struggle to find, remembered vs forgotten cues, search breakdowns, workarounds, result quality, refinement behavior, and segment differences.</p>
       <div class="foot">
         <span>One funnel. Not a review-star average.</span>
         <span class="slide-num">3 / 10</span>
@@ -307,7 +404,7 @@
     </section>
 
     <section class="slide">
-      <p class="kicker">Opportunity ranking (Phase 2)</p>
+      <p class="kicker">Opportunity ranking</p>
       <h1>Place without a name is the first problem we will solve. Generic search we refused.</h1>
       <p class="lead">People remember how a café felt and have forgotten the town.</p>
       <table class="table">
@@ -341,7 +438,7 @@
         </tr>
       </table>
       <div class="divider"></div>
-      <p class="muted">Phase 2 decision: PlaceVibeWithoutName · Metric node: understand · Interview segment: S2 trip/event rememberer · readyForPhase3: true</p>
+      <p class="muted">Top opportunity: place-vibe without a name · Metric: understand · Audience: trip rememberers</p>
       <div class="foot">
         <span>Highest-ranked retrieval theme: place-vibe-without-name</span>
         <span class="slide-num">4 / 10</span>
@@ -349,80 +446,67 @@
     </section>
 
     <section class="slide">
-      <p class="kicker">User research methodology (Phase 3)</p>
-      <h1>Six in-segment interviews validated the hypothesis before we built</h1>
+      <p class="kicker">Research & user persona</p>
+      <h1>The trip rememberer recalls the moment, but not the metadata</h1>
+      <p class="lead">Evidence-based behavioral composite of six eligible questionnaire responses—not a demographic profile or a participant quote.</p>
       <div class="row">
         <article class="card">
-          <b>Method</b>
-          <p class="small">Google Form G1–G9. 30 min protocol. Reconstruct one failed find until memory is specific.</p>
+          <b>Context</b>
+          <p class="small">Six trip rememberers with substantial Google Photos libraries described a photo they had tried and failed to find.</p>
+        </article>
+        <article class="card bet">
+          <b>What remains</b>
+          <p class="small">The feeling of the place, the trip or event, and sometimes an activity or object in the scene.</p>
         </article>
         <article class="card">
-          <b>Screener</b>
-          <p class="small">Photos ≥12 months. Library large enough that scrolling is not default. Can recall at least one remembered-but-unfound photo. Matches S2.</p>
-        </article>
-        <article class="card">
-          <b>Protocol</b>
-          <p class="small">Recover: retrieval task, remembered cues, forgotten cues, query typed, Photos response, workaround, recognizability, next attempt.</p>
+          <b>What is missing</b>
+          <p class="small">The exact date, album, town, or search phrase that would make a conventional query easy.</p>
         </article>
       </div>
       <div class="divider"></div>
-      <p class="muted">Form: https://forms.gle/wvQ3pQVQLhxMDFTm9 · Responses: 6 submitted, 6 in-segment S2 · Known-item excluded</p>
+      <p class="muted"><a class="study-link" href="https://forms.gle/wvQ3pQVQLhxMDFTm9">View the research questionnaire</a> · The study used a structured questionnaire and a 30-minute conversation to reconstruct a failed photo search.</p>
       <div class="foot">
-        <span>n=6 S2 trip/event rememberers via Google Form</span>
+        <span>Composite persona · no demographics or unique verbatim answers available</span>
         <span class="slide-num">5 / 10</span>
       </div>
     </section>
 
-    <section class="slide">
-      <p class="kicker">Validation results (Phase 3)</p>
-      <h1>Place-vibe confirmed. Forgotten date/album confirmed. Generic search not supported.</h1>
-      <table class="table">
+    <section class="slide research-analysis">
+      <p class="kicker">Questionnaire findings & product implications</p>
+      <h1>Responses support the problem focus—and reveal what to investigate next</h1>
+      <table class="table compact">
         <tr>
-          <th>Phase 1 theme</th>
-          <th>vs form</th>
-          <th>Node</th>
-          <th>Note</th>
+          <th>Finding</th>
+          <th>Product implication</th>
         </tr>
         <tr>
-          <td>Place-vibe without name</td>
-          <td><b>Confirmed</b></td>
-          <td>Understand</td>
-          <td>G4/G5 trip/place vibe; G6 place-felt/trip; G8 take vibe or trip without town</td>
+          <td>All six eligible records describe a failed first search for a trip/place-vibe photo.</td>
+          <td>Start from the remembered place or event, not a required date or town.</td>
         </tr>
         <tr>
-          <td>Forgotten date/album</td>
-          <td><b>Confirmed</b></td>
-          <td>Formulate</td>
-          <td>Forgotten cue confirmed. Product bet stays understand, not formulate</td>
+          <td>Normalized notes retain place or event memory while date, album, or town is missing.</td>
+          <td>Translate that fragment into trip-based candidate groups.</td>
         </tr>
         <tr>
-          <td>Timeline scroll workaround</td>
-          <td><b>Confirmed</b></td>
-          <td>Refine</td>
-          <td>G9: scroll, ask a person, another app, or still unfound</td>
-        </tr>
-        <tr>
-          <td>Generic search latency</td>
-          <td>Not supported</td>
-          <td>Out of scope</td>
-          <td>Form asks memory, not speed. Out of brief scope</td>
+          <td>Workarounds include scrolling, asking someone, trying another app, or leaving the photo unfound.</td>
+          <td>Make the intended photo recognizable in a focused group; counts by workaround are unavailable.</td>
         </tr>
       </table>
       <div class="divider"></div>
-      <p class="muted">Instrument gaps noted (result-grid, library-size not recovered). No invented first-person quotes. Discovery quotes stay labeled public voice.</p>
+      <p class="muted">Limits: raw answer totals, unique wording, exact queries, and result grids are not in the repository; no percentages or participant quotes are claimed. Next, capture each person’s clue, query, results, recognition, and workaround, and test trip groups against near-miss photos. Directional evidence from six respondents—not a population estimate.</p>
       <div class="foot">
-        <span>Validation matrix: place-vibe × understand × S2</span>
+        <span>Evidence, implications, and research gaps</span>
         <span class="slide-num">6 / 10</span>
       </div>
     </section>
 
     <section class="slide">
-      <p class="kicker">Problem definition (Phase 4)</p>
+      <p class="kicker">The problem</p>
       <h1>People remember how a place felt on a trip and have forgotten the date, album, and town name</h1>
       <div class="row">
         <article class="card">
           <b>Target segment</b>
-          <p class="small">S2 Trip/event rememberer. Large library. Remembers trip by vibe (café, lights, boat). Forgotten date, album, town name.</p>
+          <p class="small">Trip rememberers with large photo libraries. They recall a trip by its atmosphere, activity, or objects but have forgotten the date, album, or town.</p>
         </article>
         <article class="card">
           <b>Retrieval scenario</b>
@@ -434,15 +518,15 @@
         </article>
       </div>
       <div class="divider"></div>
-      <p class="muted">Root cause: Search cannot take the clue they still have even though the photo is in the library. Workarounds: scroll, ask a person, another app, still unfound. Business value: library people cannot re-enter becomes write-only backup.</p>
+      <p class="muted">Root cause: Search cannot use the clue that remains, even though the photo is in the library. People scroll, ask someone, try another app, or give up. Business risk: a library people cannot re-enter becomes a write-only backup.</p>
       <div class="foot">
-        <span>Locked: proceed · S2 · understand · n=6</span>
+        <span>Decision: proceed · audience: trip rememberers · focus: understanding · six respondents</span>
         <span class="slide-num">7 / 10</span>
       </div>
     </section>
 
     <section class="slide">
-      <p class="kicker">Solution & MVP (Phase 5)</p>
+      <p class="kicker">Remember</p>
       <h1>Remember puts intelligence at the moment of understanding: a vibe in, a trip group out</h1>
       <div class="row">
         <article class="card"><span class="num">1</span><b>Offer a fragment</b><p class="small">Type or speak what is left. Never a date first.</p></article>
@@ -452,18 +536,18 @@
       <div class="divider"></div>
       <p class="lead">Keyword Search stays the control. Remember is a different path — not a second search box. Intelligence at understand (place-vibe language → grouped candidates).</p>
       <div class="foot">
-        <span>Try the prototype · <a href="http://localhost:3000/mvp">localhost:3000/mvp</a></span>
+        <span>Live prototype · <a href="https://remember-photos.netlify.app/?view=photos">remember-photos.netlify.app</a></span>
         <span class="slide-num">8 / 10</span>
       </div>
     </section>
 
     <section class="slide">
-      <p class="kicker">MVP testing results (Phase 6)</p>
+      <p class="kicker">Return test results</p>
       <h1>Three return sessions found the café, the trip, and the gig. Keep grouping by trip.</h1>
       <div class="row">
         <article class="card">
-          <b>What worked (n=3)</b>
-          <p class="small">t01: keyword miss, Remember success on task-goa-cafe.<br/>t02: keyword miss, Remember success on task-goa-trip.<br/>t03: keyword miss, Remember success on task-concert-lights.</p>
+          <b>What worked (three return sessions)</b>
+          <p class="small">In each session, keyword search missed and Remember found the intended photo: a café on a Goa trip, a Goa trip photo, and a concert remembered by its lights.</p>
         </article>
         <article class="card bet">
           <b>What to change next</b>
@@ -471,38 +555,38 @@
         </article>
       </div>
       <div class="divider"></div>
-      <p class="muted">Gates passed: n-return-users=3, in-segment=S2, retrieval-task used, baseline attempted, next-iteration named, phase4-lock, phase5-mvp. Prototype library — not their Google Photos account.</p>
+      <p class="muted">Three trip rememberers completed retrieval tasks, tried the keyword baseline, and identified a next change. These results use a prototype library, not participants’ Google Photos accounts.</p>
       <div class="foot">
         <span>Keyword mixed piles vs named trip groups</span>
         <span class="slide-num">9 / 10</span>
       </div>
     </section>
 
-    <section class="slide">
-      <p class="kicker">Success metrics & risks (Phases 7-8)</p>
+    <section class="slide closing">
+      <p class="kicker">Success metrics & risks</p>
       <h1>We will know it worked when more of these searches end on the right photo</h1>
       <div class="row">
         <article class="card">
           <b>Leading metrics</b>
           <ul class="plain">
             <li class="small">Clue submitted as memory language (without date first)</li>
-            <li class="small">MemoryQuery holds the locked cue type (placeVibe, object, episode, fuzzy time)</li>
-            <li class="small">Target in the first grouped set</li>
-            <li class="small">Target opened from a group</li>
-            <li class="small">Success after refine</li>
+            <li class="small">Remember accepts place, object, activity, and approximate-time clues</li>
+            <li class="small">Intended photo appears in the first grouped set</li>
+            <li class="small">Intended photo opened from a group</li>
+            <li class="small">Successful find after refining</li>
           </ul>
         </article>
         <article class="card">
           <b>Risks & mitigations</b>
           <ul class="plain">
             <li class="small">Read as "better search" → composer asks for fragment, not "Search your photos"</li>
-            <li class="small">Model invents date/town → ground MemoryQuery in typed tokens; strip assistantText matching date/GPS patterns</li>
-            <li class="small">Learned café task success → use respondent's Phase 3 task when original photo can be used</li>
+            <li class="small">Model invents a date or town → ground interpretation in the user’s words and reject invented dates or location metadata</li>
+            <li class="small">Learned café task success → use a respondent's own task when the original photo can be used</li>
           </ul>
         </article>
       </div>
       <div class="divider"></div>
-      <p class="muted">Guardrails: control date task still succeeds in Search; hallucinated EXIF rate stays at zero. Prototype signals only — not Google Photos production telemetry.</p>
+      <p class="muted guardrails">Guardrails: known-date searches should still succeed in Search; Remember must not invent capture dates or location metadata. Metrics are prototype signals, not Google Photos product metrics.</p>
       <div class="foot">
         <span>Three risks, each with a mitigation</span>
         <span class="slide-num">10 / 10</span>

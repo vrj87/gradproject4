@@ -18,7 +18,7 @@ export function ProblemView({
     loadPhase4()
       .then((payload) => {
         setData(payload);
-        if (!payload) setError("Run `npm run phase4:lock` from the repo root.");
+        if (!payload) setError("The problem definition is not available yet.");
       })
       .catch(() => setError("Could not load the problem definition."));
   }, []);
