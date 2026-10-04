@@ -15,8 +15,8 @@
       body {
         margin: 0;
         padding: 0;
-        background: #eef2f6;
-        color: #172536;
+        background: #f5f2ef;
+        color: #25243d;
         font-family: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
       }
       .slide {
@@ -27,7 +27,10 @@
         break-after: page;
         position: relative;
         overflow: hidden;
-        background: #ffffff;
+        background:
+          radial-gradient(ellipse at 100% 100%, rgba(244, 201, 93, 0.12), transparent 32%),
+          radial-gradient(ellipse at 0% 0%, rgba(112, 86, 216, 0.07), transparent 27%),
+          #fffefd;
       }
       .slide:last-child {
         page-break-after: auto;
@@ -38,14 +41,14 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 0.1in;
-        background: #167d8d;
+        height: 0.12in;
+        background: linear-gradient(90deg, #1a9b91 0%, #7056d8 52%, #f18f75 100%);
       }
       .kicker {
         font-size: 13pt;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        color: #527080;
+        color: #7056d8;
         font-weight: 700;
         margin: 0 0 0.18in;
         display: flex;
@@ -56,7 +59,7 @@
         content: "";
         width: 0.07in;
         height: 0.07in;
-        background: #167d8d;
+        background: linear-gradient(135deg, #7056d8, #f18f75);
         border-radius: 50%;
       }
       h1 {
@@ -64,27 +67,27 @@
         line-height: 1.15;
         font-weight: 700;
         margin: 0 0 0.24in;
-        color: #172536;
+        color: #25243d;
         max-width: 11.5in;
         letter-spacing: -0.01em;
       }
       h2 {
         font-size: 20pt;
         font-weight: 600;
-        color: #172536;
+        color: #25243d;
         margin: 0 0 0.15in;
       }
       p,
       li {
         font-size: 16pt;
         line-height: 1.45;
-        color: #34495b;
+        color: #49485f;
       }
       .lead {
         margin: 0 0 0.3in;
         max-width: 11.5in;
         font-size: 18pt;
-        color: #263a4c;
+        color: #49485f;
         font-weight: 400;
       }
       .row {
@@ -93,16 +96,16 @@
       }
       .card {
         flex: 1;
-        background: #f7f9fb;
-        border: 1px solid #dce5eb;
-        border-radius: 9px;
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid #e8e3ef;
+        border-radius: 15px;
         padding: 0.24in 0.28in;
-        box-shadow: 0 2px 5px rgba(23, 37, 54, 0.04);
+        box-shadow: 0 8px 22px rgba(48, 37, 88, 0.07);
       }
       .card b {
         display: block;
         font-size: 15pt;
-        color: #172536;
+        color: #25243d;
         margin-bottom: 0.1in;
         font-weight: 700;
       }
@@ -110,19 +113,19 @@
       .card li {
         font-size: 15pt;
         margin: 0;
-        color: #5f6368;
+        color: #5d5a70;
       }
       .card.bet {
-        background: #edf7f7;
-        border-color: #9acbd0;
-        box-shadow: none;
+        background: linear-gradient(145deg, #f1edff 0%, #f8f5ff 100%);
+        border-color: #d8cff8;
+        box-shadow: 0 8px 22px rgba(91, 68, 173, 0.1);
       }
       .card.bet b {
-        color: #126a78;
+        color: #5f49c6;
       }
       .card.bet b::after {
         content: "  ·  PRODUCT BET";
-        color: #126a78;
+        color: #5f49c6;
         font-weight: 700;
         font-size: 11pt;
         letter-spacing: 0.05em;
@@ -136,20 +139,20 @@
         justify-content: space-between;
         align-items: center;
         font-size: 12pt;
-        color: #63798a;
-        border-top: 1px solid #dce5eb;
+        color: #716d82;
+        border-top: 1px solid #e7e2ec;
         padding-top: 0.18in;
       }
       .foot a {
-        color: #126a78;
+        color: #5f49c6;
         text-decoration: none;
         font-weight: 600;
       }
       .foot .slide-num {
-        background: #edf3f6;
-        color: #40596b;
+        background: #eeeaff;
+        color: #5142a4;
         padding: 0.07in 0.22in;
-        border-radius: 5px;
+        border-radius: 12px;
         font-weight: 600;
       }
       ol.plain,
@@ -161,19 +164,19 @@
         margin-bottom: 0.1in;
       }
       .quote {
-        background: #f4f7f9;
-        border-left: 4px solid #167d8d;
+        background: #f6f3ff;
+        border-left: 4px solid #7056d8;
         padding: 0.25in 0.3in;
         margin: 0 0 0.25in;
         font-size: 19pt;
         line-height: 1.35;
-        color: #172536;
-        border-radius: 0 6px 6px 0;
+        color: #25243d;
+        border-radius: 0 10px 10px 0;
         font-style: italic;
         box-shadow: 0 2px 6px rgba(0,0,0,0.04);
       }
       .muted {
-        color: #607585;
+        color: #706b80;
         font-size: 14pt;
         font-style: italic;
       }
@@ -192,7 +195,7 @@
         height: 0.32in;
         line-height: 0.32in;
         text-align: center;
-        background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+        background: linear-gradient(135deg, #7056d8 0%, #1a9b91 100%);
         color: white;
         border-radius: 50%;
         font-weight: 700;
@@ -201,18 +204,18 @@
       }
       .divider {
         height: 0.04in;
-        background: linear-gradient(90deg, transparent, #e8eaed, transparent);
+        background: linear-gradient(90deg, transparent, #dcd5f5, #f7d5cd, transparent);
         margin: 0.35in 0;
       }
       .highlight {
-        background: linear-gradient(120deg, #fff3cd 0%, #ffeaa7 100%);
+        background: linear-gradient(120deg, #fff4d6 0%, #ffe5d6 100%);
         padding: 0.04in 0.08in;
         border-radius: 4px;
       }
       .metric-pill {
         display: inline-block;
-        background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-        color: #2e7d32;
+        background: linear-gradient(135deg, #e9e3ff 0%, #d9f3ef 100%);
+        color: #5142a4;
         padding: 0.06in 0.18in;
         border-radius: 18px;
         font-size: 13pt;
@@ -228,13 +231,13 @@
       .table td {
         padding: 0.12in 0.15in;
         text-align: left;
-        border-bottom: 1px solid #dce5eb;
+        border-bottom: 1px solid #e8e3ef;
         font-size: 13.5pt;
       }
       .table th {
-        background: #edf3f6;
+        background: #f0edfa;
         font-weight: 700;
-        color: #263a4c;
+        color: #3b3558;
       }
       .table tr:last-child td {
         border-bottom: none;
@@ -262,9 +265,42 @@
         width: 59%;
       }
       .study-link {
-        color: #126a78;
+        color: #5f49c6;
         font-weight: 700;
         text-decoration: none;
+      }
+      .slide:first-of-type {
+        background:
+          radial-gradient(ellipse at 88% 16%, rgba(241, 143, 117, 0.42), transparent 31%),
+          radial-gradient(ellipse at 6% 100%, rgba(26, 155, 145, 0.46), transparent 42%),
+          linear-gradient(135deg, #282345 0%, #342b5b 58%, #43366c 100%);
+      }
+      .slide:first-of-type::before {
+        background: linear-gradient(90deg, #f4c95d, #f18f75, #c5b5ff, #72d2c3);
+      }
+      .slide:first-of-type .kicker,
+      .slide:first-of-type h1,
+      .slide:first-of-type .lead {
+        color: #fffdf8;
+      }
+      .slide:first-of-type .kicker::before {
+        background: #f4c95d;
+      }
+      .slide:first-of-type .card {
+        background: rgba(255, 255, 255, 0.94);
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+      .slide:first-of-type .card.bet {
+        background: linear-gradient(145deg, #f1edff 0%, #f8f5ff 100%);
+        border-color: #d8cff8;
+      }
+      .slide:first-of-type .foot {
+        color: #eeeaff;
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+      .slide:first-of-type .slide-num {
+        background: rgba(255, 255, 255, 0.16);
+        color: #fffdf8;
       }
       .closing .card {
         padding: 0.18in 0.24in;
