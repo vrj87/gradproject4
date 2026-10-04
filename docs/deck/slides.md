@@ -19,7 +19,7 @@ The journey is: say what you remember → understand the clue → surface a set 
 
 Listen to public photo talk → keep stories about failed finds → group themes that share a real quote → score by impact, feasibility, and how often it appears → drop “search is slow.”
 
-*Evidence:* One-slide workflow. Not a review-star average.
+*Evidence:* Discovery method. Not a review-star average.
 
 ## 4. Place without a name is the first problem we will solve. Generic search we refused.
 

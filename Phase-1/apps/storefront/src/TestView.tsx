@@ -82,7 +82,7 @@ export function TestView({
 
       <section className="formula-card">
         <span>{data?.report.complete ? "Return tests complete" : "Return tests incomplete"}</span>
-        <p>{data?.report.learnings.status ?? "Run `npm run phase6:synthesize` after you save a session."}</p>
+        <p>{data?.report.learnings.status ?? "Test results will appear after a session is saved."}</p>
       </section>
 
       <h2 className="day-title">Run the protocol</h2>
