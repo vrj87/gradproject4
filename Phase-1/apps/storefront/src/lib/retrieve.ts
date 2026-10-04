@@ -118,6 +118,20 @@ function scorePhoto(photo: LibraryPhoto, query: MemoryQuery): number {
   if (query.timeFuzzy === "last year" && photo.takenAt.startsWith("2025")) score += 2;
   if (query.timeFuzzy === "monsoon" && (hasWord(text, "rain") || hasWord(text, "monsoon"))) score += 3;
   if (query.people.length && (photo.people?.length || hasWord(text, "face") || hasWord(text, "people"))) score += 2;
+
+  // Emotion scoring
+  if (query.emotion === "happy" && (hasWord(text, "happy") || hasWord(text, "smile") || hasWord(text, "laugh") || hasWord(text, "joy"))) score += 3;
+  if (query.emotion === "sad" && (hasWord(text, "sad") || hasWord(text, "cry") || hasWord(text, "tears"))) score += 3;
+  if (query.emotion === "relaxed" && (hasWord(text, "relax") || hasWord(text, "calm") || hasWord(text, "peace"))) score += 3;
+  if (query.emotion === "romantic" && (hasWord(text, "romantic") || hasWord(text, "love") || hasWord(text, "date"))) score += 3;
+  if (query.emotion === "nostalgic" && (hasWord(text, "memory") || hasWord(text, "old") || hasWord(text, "past"))) score += 3;
+
+  // Weather scoring
+  if (query.weather === "sunny" && (hasWord(text, "sun") || hasWord(text, "sunny") || hasWord(text, "bright") || hasWord(text, "warm"))) score += 3;
+  if (query.weather === "rainy" && (hasWord(text, "rain") || hasWord(text, "storm") || hasWord(text, "wet"))) score += 3;
+  if (query.weather === "cold" && (hasWord(text, "cold") || hasWord(text, "winter") || hasWord(text, "snow") || hasWord(text, "chilly"))) score += 3;
+  if (query.weather === "cloudy" && (hasWord(text, "cloud") || hasWord(text, "overcast") || hasWord(text, "grey"))) score += 3;
+  if (query.weather === "windy" && (hasWord(text, "wind") || hasWord(text, "breeze"))) score += 3;
   if (query.similarPhotoId) {
     const seed = LIBRARY.find((item) => item.id === query.similarPhotoId);
     if (seed) {
@@ -146,6 +160,13 @@ function scorePhoto(photo: LibraryPhoto, query: MemoryQuery): number {
 
 function whyThisGroup(album: string, query: MemoryQuery, seedAlbum?: string): string {
   if (seedAlbum && album === seedAlbum) return `More like the photo you picked — ${album}`;
+  if (query.emotion === "happy" && album === "Nights out") return "Happy nights out and celebrations";
+  if (query.emotion === "happy" && album === "Goa trip") return "Happy trip moments and celebrations";
+  if (query.emotion === "relaxed" && album === "Rooftop nights") return "Relaxed rooftop evenings";
+  if (query.emotion === "romantic" && album === "Rooftop nights") return "Romantic rooftop moments";
+  if (query.weather === "sunny" && album === "Goa trip") return "Sunny beach days in Goa";
+  if (query.weather === "rainy" && album === "Camera") return "Rainy day moments";
+  if (query.weather === "cold" && album === "Europe") return "Cold weather trip moments";
   if (query.placeVibe && album === "Goa trip") {
     return "Small cafés and trip days that match that vibe";
   }

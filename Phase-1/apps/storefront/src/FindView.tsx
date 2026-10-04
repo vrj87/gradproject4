@@ -19,19 +19,24 @@ import { listenInBrowser, recordMemoryClip, transcribeClip, type MicState } from
 import { exclusionForPhoto, retrieve, type ResultGroup } from "./lib/retrieve";
 
 const EXAMPLES = [
-  { label: "Small café", clue: "small cafe on that trip" },
-  { label: "Medicine", clue: "medicine when I was sick" },
-  { label: "Receipt", clue: "screenshot of a receipt" },
-  { label: "Purple lights", clue: "the gig with the purple lights" },
-  { label: "Houseboat", clue: "houseboat on the backwaters" },
-  { label: "Fireworks", clue: "fireworks that night" },
-  { label: "Horse", clue: "horse" }
+  { label: "Small café", clue: "small cafe on that trip", icon: "local_cafe" },
+  { label: "Medicine", clue: "medicine when I was sick", icon: "medical_services" },
+  { label: "Receipt", clue: "screenshot of a receipt", icon: "receipt" },
+  { label: "Purple lights", clue: "the gig with the purple lights", icon: "wb_twilight" },
+  { label: "Houseboat", clue: "houseboat on the backwaters", icon: "sailing" },
+  { label: "Fireworks", clue: "fireworks that night", icon: "celebration" },
+  { label: "Horse", clue: "horse by the beach", icon: "pets" },
+  { label: "Sunny day", clue: "sunny afternoon with friends", icon: "wb_sunny" },
+  { label: "Rainy evening", clue: "rainy evening at home", icon: "water_drop" },
+  { label: "Birthday cake", clue: "birthday with candles", icon: "cake" }
 ] as const;
 
 const FRAGMENTS = [
   { id: "vibe", label: "A vibe", clue: "it felt like a small cafe", icon: "mood" },
   { id: "thing", label: "A thing", clue: "there was an object in it", icon: "category" },
   { id: "episode", label: "What happened", clue: "on a trip", icon: "luggage" },
+  { id: "emotion", label: "How I felt", clue: "happy moment", icon: "sentiment_satisfied" },
+  { id: "weather", label: "The weather", clue: "sunny afternoon", icon: "wb_sunny" },
   { id: "like", label: "Like this", clue: "", icon: "image_search" }
 ] as const;
 
@@ -362,6 +367,7 @@ export function FindView({
                   void findFromMemory(example.clue);
                 }}
               >
+                <Icon name={example.icon} size={18} />
                 {example.label}
               </button>
             ))}

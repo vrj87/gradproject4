@@ -406,15 +406,16 @@ a.text-btn { text-decoration: none; }
 .feature-badge {
   display: inline-flex;
   align-items: center;
-  background: var(--md-sys-color-primary);
+  background: linear-gradient(135deg, var(--md-sys-color-primary) 0%, var(--g2) 100%);
   color: #fff;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   border-radius: var(--radius-full);
-  padding: 2px 8px;
-  height: 20px;
+  padding: 3px 10px;
+  height: 22px;
+  box-shadow: var(--shadow);
 }
 
 .remember-banner,
@@ -590,7 +591,7 @@ a.text-btn { text-decoration: none; }
 }
 .fragment-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 8px;
   margin: 16px 0 12px;
 }
@@ -607,8 +608,14 @@ a.text-btn { text-decoration: none; }
   font-size: 13px;
   font-weight: 500;
   text-align: left;
+  transition: all 0.2s ease;
 }
-.fragment:hover { background: var(--md-sys-color-surface-container-low); border-color: var(--md-sys-color-primary); }
+.fragment:hover {
+  background: var(--md-sys-color-surface-container-low);
+  border-color: var(--md-sys-color-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
 .fragment .material-symbols-outlined { color: var(--md-sys-color-primary); }
 .memory-examples {
   display: flex;
@@ -621,12 +628,25 @@ a.text-btn { text-decoration: none; }
   background: var(--md-sys-color-surface-container);
   color: var(--ink);
   border-radius: var(--radius-full);
-  padding: 6px 14px;
+  padding: 8px 16px;
   font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+.memory-examples button:hover {
+  background: var(--md-sys-color-surface-container-low);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
 }
 .memory-examples button.on {
   background: var(--md-sys-color-secondary-container);
   color: var(--md-sys-color-on-secondary-container);
+  font-weight: 500;
+}
+.memory-examples button .material-symbols-outlined {
+  font-size: 18px;
 }
 
 .clue-actions {
@@ -1034,7 +1054,7 @@ p .chip-link:hover { text-decoration: underline; }
   .memory-hero { grid-template-columns: 1fr; }
   .remember-banner, .try-this { grid-template-columns: 1fr; }
   .remember-banner .primary, .try-this-actions { justify-self: start; }
-  .fragment-grid { grid-template-columns: repeat(2, 1fr); }
+  .fragment-grid { grid-template-columns: repeat(3, 1fr); }
   .composer-row { grid-template-columns: 1fr; }
   .mic-btn { width: 100%; flex-direction: row; height: 48px; }
   .search-pill .remember-go span:not(.material-symbols-outlined) { display: none; }

@@ -9,6 +9,8 @@ export interface MemoryQuery {
   timeFuzzy?: string;
   activity?: string;
   photoKind?: "memory" | "screenshot" | "document";
+  emotion?: string;
+  weather?: string;
   exclusions: string[];
   expansions: string[];
   similarPhotoId?: string;
@@ -206,6 +208,20 @@ export function parseMemoryClue(text: string, previous = emptyQuery()): MemoryQu
     if (!next.people.includes("someone I remember")) next.people.push("someone I remember");
   }
 
+  // Emotions
+  if (/\bhappy|joy|fun|excited|laughing|smiling\b/.test(lower)) next.emotion = "happy";
+  if (/\bsad|crying|tears|upset|depressed\b/.test(lower)) next.emotion = "sad";
+  if (/\brelaxed|calm|peaceful|quiet|serene\b/.test(lower)) next.emotion = "relaxed";
+  if (/\bromantic|love|date|anniversary\b/.test(lower)) next.emotion = "romantic";
+  if (/\bnostalgic|memories|old times\b/.test(lower)) next.emotion = "nostalgic";
+
+  // Weather
+  if (/\bsunny|bright|sunshine|warm|hot\b/.test(lower)) next.weather = "sunny";
+  if (/\brain|rainy|pouring|storm|monsoon\b/.test(lower)) next.weather = "rainy";
+  if (/\bcold|chilly|winter|snow|frost\b/.test(lower)) next.weather = "cold";
+  if (/\bcloudy|overcast|grey|gloomy\b/.test(lower)) next.weather = "cloudy";
+  if (/\bwindy|breeze|blowing\b/.test(lower)) next.weather = "windy";
+
   if (/\bnot (the )?(hotel|beach|europe|2022|2023|venue)\b/.test(lower)) {
     const match = lower.match(/not (?:the )?(\w+)/);
     if (match?.[1]) next.exclusions.push(match[1]);
@@ -274,6 +290,8 @@ export function understoodCues(query: MemoryQuery): Array<{ id: string; label: s
   if (query.placeVibe) items.push({ id: "vibe", label: humanCue(query.placeVibe) });
   if (query.placeName) items.push({ id: "place", label: query.placeName });
   if (query.event) items.push({ id: "event", label: humanCue(query.event) });
+  if (query.emotion) items.push({ id: "emotion", label: humanCue(query.emotion) });
+  if (query.weather) items.push({ id: "weather", label: humanCue(query.weather) });
   for (const object of query.objects) items.push({ id: `obj-${object}`, label: humanCue(object) });
   if (query.photoKind === "screenshot") items.push({ id: "kind", label: "Screenshot" });
   if (query.similarPhotoId) items.push({ id: "similar", label: "Like the photo you picked" });
@@ -291,6 +309,16 @@ function humanCue(value: string): string {
   if (text === "when I was sick") return "When I was sick";
   if (text === "wedding dinner") return "A wedding";
   if (text === "trip") return "A trip";
+  if (text === "happy") return "Happy moment";
+  if (text === "sad") return "Sad moment";
+  if (text === "relaxed") return "Relaxed mood";
+  if (text === "romantic") return "Romantic moment";
+  if (text === "nostalgic") return "Nostalgic memory";
+  if (text === "sunny") return "Sunny weather";
+  if (text === "rainy") return "Rainy weather";
+  if (text === "cold") return "Cold weather";
+  if (text === "cloudy") return "Cloudy weather";
+  if (text === "windy") return "Windy weather";
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
