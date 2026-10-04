@@ -1,6 +1,6 @@
-# Google Photos — 10-slide narrative
+# Google Photos — Product Management narrative
 
-Titles are the message. Slide 3 is the only process slide.  
+Titles are the message. Research evidence, interpretation, and limitations stay distinct.
 Deliverable: `docs/deck/NL_GooglePhotos.pdf`. No fellow name.
 
 ## 1. The job is finding a photo you still picture — not a better search box
@@ -27,11 +27,11 @@ People remember how a café felt and have forgotten the town. We did not pick se
 
 *Evidence:* Highest-ranked retrieval theme: place vibe without a name.
 
-## 5. They remember the vibe of a trip. They have forgotten the date and the town.
+## 5. The trip rememberer recalls the moment, but not the metadata
 
-Six people in this audience described the same miss: a trip photo they can still picture. Real task: “That small café on the Goa trip.”
+An evidence-based behavioral composite of six eligible questionnaire responses—not a demographic persona or participant quote. They recall a trip/place-vibe photo and the feeling or event, but may have forgotten the date, album, town, or search phrase. All six normalized records describe a failed first search. Workarounds include scrolling, asking someone, trying another app, or leaving the photo unfound.
 
-*Evidence:* Study of six trip rememberers. Public reviews say the same thing.
+*Product implication:* Accept place-vibe and event clues without requiring a date or town, then show focused trip groups. The repository lacks raw answer totals, unique wording, exact queries, and result grids; no percentages or participant quotes are claimed. Next, capture each person’s clue, query, results, recognition, and workaround, and test grouping against near-miss photos. Directional evidence from six respondents, not a population estimate.
 
 ## 6. Search cannot take the fragment that survived — even though the photo is already in the library
 

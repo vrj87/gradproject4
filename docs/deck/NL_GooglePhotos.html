@@ -284,6 +284,26 @@
         line-height: 1.32;
         font-style: normal;
       }
+      .research-analysis .card {
+        padding: 0.14in 0.18in;
+      }
+      .research-analysis .plain {
+        padding-left: 0.22in;
+      }
+      .research-analysis .plain li {
+        font-size: 11.5pt;
+        line-height: 1.2;
+        margin-bottom: 0.04in;
+      }
+      .research-analysis .divider {
+        margin: 0.12in 0;
+      }
+      .research-analysis .muted {
+        margin: 0;
+        font-size: 11.5pt;
+        line-height: 1.25;
+        font-style: normal;
+      }
     </style>
   </head>
   <body>
@@ -390,64 +410,56 @@
     </section>
 
     <section class="slide">
-      <p class="kicker">User research</p>
-      <h1>Six trip rememberers validated the hypothesis before we built</h1>
+      <p class="kicker">Research & user persona</p>
+      <h1>The trip rememberer recalls the moment, but not the metadata</h1>
+      <p class="lead">Evidence-based behavioral composite of six eligible questionnaire responses—not a demographic profile or a participant quote.</p>
       <div class="row">
         <article class="card">
-          <b>Method</b>
-          <p class="small">Google Form questionnaire and 30-minute conversation. Reconstruct one failed photo search until the memory is specific.</p>
+          <b>Context</b>
+          <p class="small">Six trip rememberers with substantial Google Photos libraries described a photo they had tried and failed to find.</p>
+        </article>
+        <article class="card bet">
+          <b>What remains</b>
+          <p class="small">The feeling of the place, the trip or event, and sometimes an activity or object in the scene.</p>
         </article>
         <article class="card">
-          <b>Screener</b>
-          <p class="small">Uses Photos for at least a year, has a substantial library, and can recall a photo they remember but have not been able to find.</p>
-        </article>
-        <article class="card">
-          <b>Protocol</b>
-          <p class="small">Recover: retrieval task, remembered cues, forgotten cues, query typed, Photos response, workaround, recognizability, next attempt.</p>
+          <b>What is missing</b>
+          <p class="small">The exact date, album, town, or search phrase that would make a conventional query easy.</p>
         </article>
       </div>
       <div class="divider"></div>
-      <p class="muted"><a class="study-link" href="https://forms.gle/wvQ3pQVQLhxMDFTm9">View the research questionnaire</a> · All six respondents met the audience criteria; known-item searches were excluded.</p>
+      <p class="muted"><a class="study-link" href="https://forms.gle/wvQ3pQVQLhxMDFTm9">View the research questionnaire</a> · The study used a structured questionnaire and a 30-minute conversation to reconstruct a failed photo search.</p>
       <div class="foot">
-        <span>Six trip rememberers interviewed</span>
+        <span>Composite persona · no demographics or unique verbatim answers available</span>
         <span class="slide-num">5 / 10</span>
       </div>
     </section>
 
-    <section class="slide">
-      <p class="kicker">What the research confirmed</p>
-      <h1>Place-vibe confirmed. Forgotten date/album confirmed. Generic search not supported.</h1>
+    <section class="slide research-analysis">
+      <p class="kicker">Questionnaire findings & product implications</p>
+      <h1>Responses support the problem focus—and reveal what to investigate next</h1>
       <table class="table compact">
         <tr>
-          <th>Discovery theme</th>
           <th>Finding</th>
           <th>Product implication</th>
         </tr>
         <tr>
-          <td>Place-vibe without name</td>
-          <td><b>Confirmed</b></td>
-          <td>People recalled how a place felt on a trip even when they had forgotten the town.</td>
+          <td>All six eligible records describe a failed first search for a trip/place-vibe photo.</td>
+          <td>Start from the remembered place or event, not a required date or town.</td>
         </tr>
         <tr>
-          <td>Forgotten date/album</td>
-          <td><b>Confirmed</b></td>
-          <td>People remembered the photo without its date or album. The product bet remains understanding the clue.</td>
+          <td>Normalized notes retain place or event memory while date, album, or town is missing.</td>
+          <td>Translate that fragment into trip-based candidate groups.</td>
         </tr>
         <tr>
-          <td>Timeline scroll workaround</td>
-          <td><b>Confirmed</b></td>
-          <td>People scrolled, asked someone, tried another app, or gave up.</td>
-        </tr>
-        <tr>
-          <td>Generic search latency</td>
-          <td>Not supported</td>
-          <td>The study asked about retrieval from memory, not search speed; latency remains out of scope.</td>
+          <td>Workarounds include scrolling, asking someone, trying another app, or leaving the photo unfound.</td>
+          <td>Make the intended photo recognizable in a focused group; counts by workaround are unavailable.</td>
         </tr>
       </table>
       <div class="divider"></div>
-      <p class="muted">The study did not capture result grids or exact library sizes. No first-person quotes were invented; public discovery quotes remain labeled as public voice.</p>
+      <p class="muted">Limits: raw answer totals, unique wording, exact queries, and result grids are not in the repository; no percentages or participant quotes are claimed. Next, capture each person’s clue, query, results, recognition, and workaround, and test trip groups against near-miss photos. Directional evidence from six respondents—not a population estimate.</p>
       <div class="foot">
-        <span>Research supports a focus on understanding place-vibe clues</span>
+        <span>Evidence, implications, and research gaps</span>
         <span class="slide-num">6 / 10</span>
       </div>
     </section>
